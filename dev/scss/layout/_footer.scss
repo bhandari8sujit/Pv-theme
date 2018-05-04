@@ -24,6 +24,11 @@ footer {
         & .social-icons{
             padding-left: 0px;
             margin-bottom: 63px;
+
+            @include respond(phone){
+                margin-bottom: 0px;
+            }
+
                 li{
                 list-style-type: none;
                 display: inline;
@@ -51,6 +56,15 @@ footer {
                 }
             }
         }
+
+    }
+    @include respond(phone){
+        & .p-l-100{
+            padding-left: 15px;
+        }
+        & .p-l-0{
+            padding-left: 15px;
+        }
     }
     input{
         width:262px;
@@ -72,6 +86,18 @@ footer {
         font-size: 14px;
         font-weight: 400;
         line-height: 16px;
+    }
+    @include respond(phone){
+    .left{
+        display: block;
+        text-align: center;
+    }
+    .right{
+        float: none !important;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
     }
 }
 

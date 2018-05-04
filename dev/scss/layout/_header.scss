@@ -9,6 +9,10 @@
     line-height: 42px;
     margin-right: 470px;
     display: inline;
+
+    @include respond(phone){
+        margin-right: 0px;
+    }
     }
 
     .navbar-default{

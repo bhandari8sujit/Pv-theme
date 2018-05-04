@@ -4,6 +4,11 @@
     background-color: #fff;
    // margin-bottom: 90px;
     margin-right: 30px;
+    
+    @include respond(phone){
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
     & :hover{
          .overlay {

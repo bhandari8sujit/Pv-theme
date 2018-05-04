@@ -4,6 +4,10 @@
     height: 100%;
     display: table;
 
+    @include respond(phone){
+        padding: 0px 7px;
+    }
+
     & .banner-img_wrap{
         width: 100%;
         height: 100%;

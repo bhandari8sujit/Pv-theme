@@ -37,6 +37,10 @@
     & .content-body{
         margin: 98px 220px;
 
+        @include respond(phone){
+            margin: 98px 20px;
+        }
+
     .btn{
         margin-top: 26px;
         width: 160px;
