@@ -1,0 +1,18 @@
+#myCarousel{
+    @include fill;
+
+    & .carousel-inner {
+        @include fill;
+
+        & .item{
+            @include fill;
+
+            & .inner-img{
+                @include fill;
+                background-repeat:no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

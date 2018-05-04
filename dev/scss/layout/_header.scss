@@ -1,0 +1,71 @@
+.theme-header{
+   padding: 23px 48px 28px 28px;
+
+    & .theme-logo{
+    color: #000000;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-right: 470px;
+    display: inline;
+    }
+
+    .navbar-default{
+        background-color:#fff;
+        border: none;
+        padding: 23px 0px 28px 0px;
+    }
+    .navbar{
+        margin-bottom: 0px;
+    }
+    #navbar{
+        li{
+            a{
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+
+                i{
+                    width: 15px;
+                    height: 15px;
+                    color: #000000;
+                }
+            }
+            
+            &:nth-child(8) {                
+                a{
+                    padding-left: 6px;
+                    i{
+                        padding-left: 10px;
+                        border-left: 1px solid #979797;
+                    }
+                }
+            }
+            &:nth-child(9) {
+                a{
+                    padding-right: 6px;
+                    i{
+                        padding-right: 23px;
+                        border-right: 1px solid #979797;
+                    }    
+                }
+                  
+            }
+        }
+    }
+    .btn{       
+        width: 115px;
+        height: 31px;
+        padding: 6px 16px 9px 16px;
+        background-color: #fff;
+        border: 1px solid #979797;
+        color: #696969;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        border-radius: 50px 50px 50px 50px;
+    }
+}

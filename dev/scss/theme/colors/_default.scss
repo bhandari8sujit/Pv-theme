@@ -1,0 +1,17 @@
+@import "./utilities/mixins";
+@import "./utilities/functions";
+
+// Global Prefix
+$global: 'theme';
+
+// Color Variables
+$color-white: 	#fff;
+$color-black: 	#000;
+
+$color-base : #7C7C7C;
+$color-header : $color-black;
+$color-border : #D5D5D5;
+$color-border-hover : $color-black;
+
+$color-header-bg : $color-white;
+$color-footer-bg : $color-black;
