@@ -50,7 +50,7 @@ $(document).ready(function(){
                 
             },
             1200:{
-                items:3,
+                items:4,
                 nav:true,
                 loop:false
             },
@@ -61,15 +61,4 @@ $(document).ready(function(){
             }
         }
     })
-
-$("#offcanvas-btn").click(function(){
-    $("#offcanvas").css("width", "212px");
-    $("body").css("margin-right","212px");
-})
-$("#offcanvas a").click(function(){
-    $("#offcanvas").css("width", "0px");
-    $("body").css("margin-right","0px");
-})  
-
-
 });

@@ -7,18 +7,21 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
-    margin-right: 470px;
+   // margin-right: 490px;
     display: inline;
 
-    @include respond(phone){
-        margin-right: 0px;
+    a{
+        color: #000;
     }
+    //@include respond(phone){
+    //    margin-right: 0px;
+    //}
     }
 
     .navbar-default{
         background-color:#fff;
         border: none;
-        padding: 23px 0px 28px 0px;
+        padding: 27px 0px 28px 0px;
     }
     .navbar{
         margin-bottom: 0px;
@@ -27,20 +30,25 @@
         li{
             a{
                 font-family: Lato;
-                font-size: 14px;
+                
                 font-weight: 400;
                 line-height: 16px;
 
                 i{
-                    width: 15px;
-                    height: 15px;
+                    font-size: 14px;
                     color: #000000;
                 }
             }
-            
+            &:nth-child(7) {  
+                padding-top: 8px;
+                padding-bottom: 0px;
+                padding-right: 15px;
+                
+            }
             &:nth-child(8) {                
                 a{
-                    padding-left: 6px;
+                    padding-left: 0px;
+
                     i{
                         padding-left: 10px;
                         border-left: 1px solid #979797;
@@ -48,28 +56,19 @@
                 }
             }
             &:nth-child(9) {
-                a{
-                    padding-right: 6px;
+                a{   
+                    padding-right: 5px;                
+                    
                     i{
-                        padding-right: 23px;
+                        padding-right: 10px;
                         border-right: 1px solid #979797;
                     }    
                 }
                   
             }
         }
-    }
-    .btn{       
-        width: 115px;
-        height: 31px;
-        padding: 6px 16px 9px 16px;
-        background-color: #fff;
-        border: 1px solid #979797;
-        color: #696969;
-        font-family: Lato;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16px;
-        border-radius: 50px 50px 50px 50px;
+        .navbar-nav {
+            float: right;
+        }
     }
 }

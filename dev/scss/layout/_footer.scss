@@ -1,4 +1,4 @@
-footer {
+.theme-footer {
     background: #000;
   //  height: 553px;
     padding-bottom: 45px;
@@ -9,7 +9,8 @@ footer {
         font-style: normal;
         font-weight: normal;
         line-height: 28px;
-        font-size: 20px;
+        //font-size: 20px;
+        @include font-size(2.8);
         text-transform: uppercase;
         color: #525252;
     }
@@ -18,12 +19,14 @@ footer {
         font-style: normal;
         font-weight: normal;
         line-height: 30px;
-        font-size: 18px;                    
+        //font-size: 18px;                    
+        @include font-size(1.8);
         color: #FFFFFF;
         
         & .social-icons{
             padding-left: 0px;
-            margin-bottom: 63px;
+            //width: 345px;
+            //margin-bottom: 63px;
 
             @include respond(phone){
                 margin-bottom: 0px;
@@ -31,7 +34,7 @@ footer {
 
                 li{
                 list-style-type: none;
-                display: inline;
+                display: inline-block;
                 margin-right: 28px;
                 
                 a{
@@ -40,6 +43,8 @@ footer {
 
                 i{
                     color: #fff;
+                    width: 20px;
+                    height: 17px;
                 }
             }
         }
@@ -50,7 +55,7 @@ footer {
                 a{
                     font-family: Lato;
                     font-style: Regular;
-                    font-size: 18px;
+                    @include font-size(1.8);
                     line-height: 40px;
                     color: #fff;
                 }
@@ -76,26 +81,21 @@ footer {
         margin-bottom: 30px;
         border-top: 1px solid #444;
     }
-    .btn-footer{
-        width: 106px;
-        height: 37px;
-        background-color: #ffffff;
-        border:none;
-        color: #000000;
-        font-family: Lato;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16px;
+    .bottom-hr{
+        @include respond(tab-port){
+            margin-top: 60px;
+        }
     }
+
     @include respond(phone){
     .left{
         display: block;
-        text-align: center;
+        //text-align: center;
     }
     .right{
         float: none !important;
         display: block;
-        text-align: center;
+        //text-align: center;
         margin-top: 20px;
     }
     }
