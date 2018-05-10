@@ -1,5 +1,5 @@
 .theme-header{
-   padding: 23px 48px 28px 28px;
+   padding:28px;
 
     & .theme-logo{
     color: #000000;
@@ -18,16 +18,28 @@
     //}
     }
 
+    .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .navbar-default{
         background-color:#fff;
         border: none;
-        padding: 27px 0px 28px 0px;
+       // padding: 27px 0px 28px 0px;
+
+       .navbar-collapse{
+           border: none;
+       }
     }
     .navbar{
         margin-bottom: 0px;
     }
-    #navbar{
+    .navbar-nav{
+        list-style-type: none;
+        display: inline;
+        
         li{
+            
             a{
                 font-family: Lato;
                 
@@ -39,15 +51,22 @@
                     color: #000000;
                 }
             }
+           
+
             &:nth-child(7) {  
                 padding-top: 8px;
                 padding-bottom: 0px;
                 padding-right: 15px;
-                
+                @include respond(phone){
+                    padding-left: 10px;
+                } 
             }
             &:nth-child(8) {                
                 a{
                     padding-left: 0px;
+                    @include respond(phone){
+                        padding-left: 12px;
+                    }
 
                     i{
                         padding-left: 10px;
@@ -67,8 +86,16 @@
                   
             }
         }
-        .navbar-nav {
-            float: right;
-        }
+    }
+    .navbar-right {
+        float: right;
+    }
+
+    .navbar-nav>li{
+        float: left ;
+    }
+    .navbar-collapse.collapse {
+        display: block;
+        padding-left: 0px
     }
 }

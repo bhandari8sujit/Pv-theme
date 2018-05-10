@@ -1,13 +1,4 @@
 .content{
-
-    .owl-carousel{
-        .owl-nav{
-            display: none;
-        }
-        .owl-dots{
-            display: none;
-        }
-    }
     & .cnt-title{
         color: #000000;
         font-family: Lato;
@@ -16,10 +7,17 @@
         line-height: 42px;
         margin-top: 90px;
         margin-bottom: 40px;
+
+        @include respond(phone){
+            @include font-size(2.6);
+        }
     }
 
     & .content-body{
         margin: 98px 220px;
+        @include respond(tab-port){
+            margin: 98px 40px;
+        }
 
         @include respond(phone){
             margin: 98px 20px;
@@ -30,11 +28,53 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 28px;
+
+        @include respond(phone){
+            @include font-size(1.6);
+        }
+
         }
     }
     & .inner-img{
         width: 100%;
         height: 182px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .m-b-90{
+        position: relative;
+    }
+    .gallery-thumbs{
+        filter: brightness(50%);
+        list-style-type: none;
+        padding-left: 0px;
+        
+        & li{
+            display: inline-block;
+            //padding-top: 10px;
+            //padding-right: 10px;
+            padding-left: 10px;
+
+            @include respond(tab-port){
+                padding-top: 10px;
+                padding-left: 10px
+            }
+
+            @include respond (phone){
+                padding-left: 0px;
+            }
+            img{
+                width: 182px;
+                height: 182px;
+
+                @include respond(phone){
+                    width: 100%;  
+                    height: auto;                
+                }
+            }
+
+
+        }
     }
 }
 #theme-news{
