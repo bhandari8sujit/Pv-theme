@@ -4,13 +4,13 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    util = require('gulp-util'),
+  //  util = require('gulp-util'),
     htmlmin = require('gulp-htmlmin'),
     imagemin = require('gulp-imagemin'),
     plumber = require('gulp-plumber'),
     sourcemaps = require('gulp-sourcemaps'),
     rename = require('gulp-rename'),
-    jshint = require('gulp-jshint'),
+ //   jshint = require('gulp-jshint'),
     strip = require('gulp-strip-comments'),
     fileinclude = require('gulp-file-include'),
     styleguide = require('sc5-styleguide'),
@@ -39,7 +39,7 @@ gulp.task('sass', function() {
 // Copy web fonts to dist
 gulp.task('fonts', function() {
     return gulp.src(['dev/fonts/**'])
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('dist/fonts'));
 });
 
 // HTML minify
@@ -69,7 +69,7 @@ gulp.task('scripts', function() {
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('dist/scripts'))
+        .pipe(gulp.dest('dist/scripts'));
 });
 
 // Images minify
@@ -81,7 +81,7 @@ gulp.task('images', function() {
             optimizationLevel: 5,
             svgoPlugins: [{ removeViewBox: true }]
         }))
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('styleguide:generate', function() {
@@ -98,7 +98,7 @@ gulp.task('styleguide:generate', function() {
             ],
             disableEncapsulation: true
         }))
-        .pipe(gulp.dest(outputPath))
+        .pipe(gulp.dest(outputPath));
 });
 
 

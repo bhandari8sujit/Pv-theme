@@ -1,6 +1,60 @@
-.#{$global} {
-    &-contact {
-        &__desc {}
-        &__form {}
+#theme-contact-page{
+
+    .contact-hr{
+    border-top: 1px solid #979797;
+    }
+
+    .line{
+        position: relative;
+    }
+    .send-btn{
+        width: 168px;
+        height: 44px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .line::after {
+        content:''; 
+        position: absolute; 
+        top:1%; bottom:-38%; 
+        left:100%;
+        z-index:9999; 
+        width:1px; 
+        background: #979797; 
+    }
+    .contact-form-input{        
+        position: relative;
+            
+        i{
+            position: absolute;
+            top: -15%;
+            right: -1%;
+            background: red;
+            border-radius: 50%;
+            color: #fff;
+
+        }
+        
+    }
+    ul{
+    list-style-type: none;
+    padding-left: 0px;
+
+        li{
+            display: inline-block;      
+
+        }
+        .list-2{
+            position: absolute;
+            padding-left: 120px;
+        }
+    }
+    & .content{
+    
+        p{
+            color:#000;
+            margin-bottom: 10px;
+        }
     }
 }

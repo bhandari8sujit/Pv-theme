@@ -4,6 +4,7 @@
     border-radius: 0px;
 }
 .btn-dark{
+    border-radius: 0;
     background: #000;
     color:#fff;
 }
@@ -12,7 +13,27 @@
     color:#000;
     border-radius: 50px 50px 50px 50px;
 }
-
+.event-btn{
+    width: 202px !important;
+}
+.btn-rsvp{
+    width: 100px;
+    height: 44px;
+    font-size: 20px;
+    line-break: 24px;
+}
+.btn-news{
+    width: 207px;
+    height: 44px;
+    font-size: 20px;
+    line-break: 24px;
+}
+.send-btn{
+    width: 170px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 24px;
+}
 .btn-desc{
     margin-top: 26px;
     width: 160px;
@@ -43,6 +64,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    border-radius: 0px;
  
 }
 .btn-header{       
@@ -60,10 +82,15 @@
     background: #7c7c7c;
     color:#fff;
 }
-btn-disabled{
+.btn-disabled{
     background: #ebebeb;
 }
-
+.btn-gallery-page{
+    width: 160px;
+    height: 44px;
+    font-size: 18px;
+    line-height: 22px;
+}
 .btn:focus, .btn:active:focus{
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: -2px;

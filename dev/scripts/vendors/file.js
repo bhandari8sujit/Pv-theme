@@ -44,6 +44,10 @@ $(document).ready(function(){
                 items:1,
                 nav:true
             },
+            550:{
+                items:2,
+                nav:true
+            },
             768:{
                 items:2,
                 nav:false
@@ -64,5 +68,5 @@ $(document).ready(function(){
                 loop:false
             }
         }
-    })
+    });
 });

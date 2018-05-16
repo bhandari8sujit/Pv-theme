@@ -1,2 +1,47 @@
-.#{$global} {
+#theme-gallery-page{
+    .gallery-thumb{
+        position: relative;
+        img{
+            width: 70%;
+            height: 440px;
+
+            @include respond(tab-port){
+                width: 100%;
+            }
+        }
+
+        & .gallery-thumb_info{
+            width: 555px;
+            height: 250px;
+            background: #000;
+            position: absolute;
+            top: 22%;
+            right: 0%;
+
+            @include respond(tab-port){
+                position: relative;
+                width: 100%;
+            }
+            
+            h4{
+                color:#fff;
+            }
+
+            .left-box{
+                left: 0% !important;
+            }           
+        }
+        .gti-left{
+            left: 0%;
+        }
+        .p-l-100{
+            padding-left: 50px;
+        }
+    }
+    .gallery-album-thumbs{
+        img{
+            width: 100%;
+            height: 360px;
+        }
+    }
 }
