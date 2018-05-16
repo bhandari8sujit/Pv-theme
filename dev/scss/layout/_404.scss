@@ -1,0 +1,24 @@
+#theme-404-page{
+    .wrapper{
+        display: table;
+        
+        & .items{
+            padding: 250px 0px;
+            display: table-cell;
+            vertical-align:middle;
+
+            span{
+                font-size: 144px;
+                line-height: 181px;
+                font-family: Merriweather;
+                color: #000;
+                
+            }
+            p{
+                font-size: 20px;
+                line-height: 40px;
+
+            }
+        }
+    }
+}

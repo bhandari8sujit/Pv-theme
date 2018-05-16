@@ -1,9 +1,13 @@
-form{
+#contact-form{
     input{
         width: 100%;
         height: 50px;
         margin-bottom: 30px;
         padding: 15px 18px;
+        border-radius: 0px;
+    }
+    textarea{
+        border-radius: 0px;
     }
 
     .form__captcha{
