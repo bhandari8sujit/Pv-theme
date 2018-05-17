@@ -1,24 +1,51 @@
 #theme-404-page{
-    .wrapper{
-        display: table;
+    //.wrapper{
+    //    display: table;
+    //    
+    //    & .items{
+    //        padding: 250px 0px;
+    //        display: table-cell;
+    //        vertical-align:middle;
+//
+    //        span{
+    //            font-size: 144px;
+    //            line-height: 181px;
+    //            font-family: Merriweather;
+    //            color: #000;
+    //            
+    //        }
+    //        p{
+    //            font-size: 20px;
+    //            line-height: 40px;
+//
+    //        }
+    //    }
+    //}
+    .errorWrap{
         
-        & .items{
-            padding: 250px 0px;
-            display: table-cell;
-            vertical-align:middle;
+        & .errorWrap--head {
+            margin-bottom: 10px;
+            color:#000;
 
-            span{
-                font-size: 144px;
-                line-height: 181px;
+            & .big {
                 font-family: Merriweather;
-                color: #000;
-                
+                font-size: 150px;
+                margin-right: 10px;
             }
-            p{
-                font-size: 20px;
-                line-height: 40px;
+            & .small{
+                font-size: 40px;
+            }
+        }
 
+        & .errorWrap--info{
+            & .title{
+                font-size: 20px;
+                margin-bottom: 40px;
+                display: block;
+                text-transform: none;
             }
         }
     }
+
+    
 }

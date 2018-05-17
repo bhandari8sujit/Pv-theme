@@ -4,6 +4,7 @@
     height: calc(100% - 106px);    
     display: block;
     margin-bottom: -28px;
+    position: relative;
 
     @include respond(phone){
         padding: 0px 7px;
@@ -15,5 +16,26 @@
         height: 100%;
         display: block;
                 
+    }
+     .theme-banner-info{
+        background-color: rgba(0,0,0,.5);
+        width: 70%;
+        margin-left: 15%;
+       // height: 189px;
+        bottom: 35px;
+        position: absolute;
+        padding: 30px;
+        color: #fff;
+        font-size:22px;
+        line-height: 28px;
+
+        @include respond (phone){            
+            width: 95%;
+            margin-left: 2.5%;
+            bottom: 35px;            
+            padding: 30px 20px;            
+            font-size: 18px;
+            line-height: 26px
+        }
     }
 }
