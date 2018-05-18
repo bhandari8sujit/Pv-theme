@@ -30,17 +30,19 @@
                         <span>Gallery</span>
                     </div>
                     <hr class="content-hr m-b-50"> 
-                    <span class="pull-left"><i class="pvi-arrow-left"></i>&nbsp;Back to albums</span>
-                    <ul class="social pull-right m-b-60">
-                        <li><i class="pvi-facebook"></i></li>
-                        <li><i class="pvi-twitter"></i></li>
-                        <li><i class="pvi-google-plus"></i></li>
-                        <li><i class="pvi-linkedin"></i></li>                        
-                    </ul>   <br>
+                    <span class="pull-left clearfix"><a href="#"><i class="pvi-arrow-left"></i>&nbsp;Back to albums</a></span>
+                    <ul class="social pull-right m-b-60 clearfix">
+                        <li><a href="#"><i class="pvi-facebook"></i></a></li>
+                        <li><a href="#"><i class="pvi-twitter"></i></a></li>
+                        <li><a href="#"><i class="pvi-google-plus"></i></a></li>
+                        <li><a href="#"><i class="pvi-linkedin"></i></a></li>                        
+                    </ul>   
+                    <br>    
 
                     <div class="row text-center">
                         <div class="col-md-12">                
-                            <div class="event-desc text-left col-md-offset-3 col-sm-offset-2">                                
+                            <div class="event-desc text-left col-md-offset-3 col-sm-offset-2">     
+                                                
                                 <h1>Album Name</h1>
                                 <br>                                             
                             </div>
@@ -51,34 +53,66 @@
                             </div>                       
                         -->
                             
-                            <div class="grid"> 
-                                <div class="grid-sizer"></div>
+                            <div class="grid-wrap"> 
+                                
                                 <div class="grid-item">
-                                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+                                    <div class="grid-item__thumb">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+                                        <a href="#"><div class="after"><p>Image Caption</p></div></a>
+                                        <div class="after-2"></div>
+                                    </div>
                                 </div>
                                 
                                 <div class="grid-item">
-                                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+                                    <div class="grid-item__thumb">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+                                        <a href="#"><div class="after"><p>Image Caption</p></div></a>
+                                        <div class="after-2"></div>
+                                    </div>
                                 </div>
+
+                                
                                 <div class="grid-item">
-                                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+                                    <div class="grid-item__thumb">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+                                        <a href="#"><div class="after"><p>Image Caption</p></div></a>
+                                        <div class="after-2"></div>
+                                    </div>
                                 </div>
+
                                 <div class="grid-item">
-                                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+                                    <div class="grid-item__thumb">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+                                        <a href="#"><div class="after"><p>Image Caption</p></div></a>
+                                        <div class="after-2"></div>
+                                    </div>
                                 </div>
+
                                 <div class="grid-item">
-                                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+                                    <div class="grid-item__thumb">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+                                        <a href="#"><div class="after"><p>Image Caption</p></div></a>
+                                        <div class="after-2"></div>
+                                    </div>
                                 </div>
+
                                 <div class="grid-item">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />  
-                                </div>
-                                <div class="grid-item ">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-                                </div>
+                                    <div class="grid-item__thumb">
+                                        <img src="http://via.placeholder.com/350x350" />
+                                        <a href="#"><div class="after"><p>Image Caption</p></div></a>
+                                        <div class="after-2"></div>
+                                    </div>
+                                </div>  
+                                
                                 <div class="grid-item">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-                                </div>     
+                                        <div class="grid-item__thumb">
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+                                            <a href="#"><div class="after"><p>Image Caption</p></div></a>
+                                            <div class="after-2"></div>
+                                        </div>
+                                </div>
                             </div>
+
                         </div>
                             
                     </div>
@@ -95,6 +129,16 @@
 
 @@include('includes/footer.html')
 
-<script src="scripts/main.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+<script>   
+var elem = document.querySelector('.grid-wrap');
+var iso = new Isotope( elem, {
+  // options
+  itemSelector: '.grid-item',
+ 
+});
+</script>
+
 </body>
 </html>

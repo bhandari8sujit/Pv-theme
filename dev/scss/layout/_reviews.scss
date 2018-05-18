@@ -1,23 +1,86 @@
 #theme-reviews-page{
-    .reviews-thumbs{
-        & .reviews-thumbs-card{
-            width: 100%;
-            border: 1px solid #d2d2d2;
-            padding: 0px 30px 62px 30px;
-            //height: 200px;
+    //.reviews-thumbs{
+    //    & .reviews-thumbs-card{
+    //        width: 100%;
+    //        border: 1px solid #d2d2d2;
+    //        padding: 0px 30px 62px 30px;
+    //        //height: 200px;
+//
+    //        @include respond (tab-port){
+    //            margin-bottom: 80px;
+    //        }
+//
+    //        img{
+    //            width: 100px;
+    //            height: 100px;
+    //            border-radius: 50%;
+    //            margin-top: -50px;
+    //            margin-bottom: 30px;
+    //        }
+    //        p{
+    //            font-size: 20px;
+    //            line-height: 14px;
+    //            color: #000;
+    //        }
+    //    }
+    //}
 
-            img{
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                margin-top: -50px;
-                margin-bottom: 30px;
-            }
-            p{
-                font-size: 20px;
-                line-height: 14px;
-                color: #000;
+
+.review-title {
+    margin-bottom: 50px;
+}
+
+.review-wrap {
+    margin: 0 -15px 30px;
+    &__review {
+        width: 33.333333%;
+        padding: 0 15px;
+        img {
+            width: 75px;
+        }
+        @include respond(tab-port) {
+            width: 50%;
+        }
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+}
+
+.review-card {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 30px;
+    &__header {
+        img {
+            width: 75px;
+            margin-bottom: 10px;
+        }
+        .author-name {
+            font-size: 18px;
+        }
+        .rating {
+            li {
+                margin: 0 -2px;
+                padding: 0;
+                i {
+                    font-size: 18px;
+                }
             }
         }
     }
+    &__body {}
+}
+
+.review-view-more {
+    background-color: #ccc;
+    padding: 6px 15px 6px 25px;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    i {
+        vertical-align: middle;
+    }
+}
 }

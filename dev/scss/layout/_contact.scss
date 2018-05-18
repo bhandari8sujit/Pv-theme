@@ -17,11 +17,16 @@
     .line::after {
         content:''; 
         position: absolute; 
-        top:1%; bottom:-38%; 
+        top:1%; bottom:-60%; 
         left:100%;
         z-index:9999; 
         width:1px; 
-        background: #979797; 
+        background: #979797;
+
+        @include respond(tab-port){
+            display: none;
+        }
+
     }
     .contact-form-input{        
         position: relative;
@@ -41,12 +46,23 @@
     padding-left: 0px;
 
         li{
-            display: inline-block;      
+            display: inline-block; 
+            
+            @include respond(tab-port){
+                display: block;
+            }     
 
         }
         .list-2{
             position: absolute;
             padding-left: 120px;
+
+            @include respond(tab-port){
+                margin: 40px 0px;
+                display: block;
+                position: relative;
+                padding-left: 0px;
+            }   
         }
     }
     & .content{
@@ -54,6 +70,11 @@
         p{
             color:#000;
             margin-bottom: 10px;
+        }
+    }
+    .p-l-30{
+        @include respond(tab-port){
+            padding-left: 15px;
         }
     }
 }

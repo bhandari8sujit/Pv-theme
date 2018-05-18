@@ -31,9 +31,19 @@
                 font-family: Merriweather;
                 font-size: 150px;
                 margin-right: 10px;
+
+                @include respond (phone){
+                    font-size: 75px;
+                }
+
             }
             & .small{
                 font-size: 40px;
+
+                @include respond (phone){
+                    font-size: 20px;
+                }
+
             }
         }
 
@@ -43,6 +53,10 @@
                 margin-bottom: 40px;
                 display: block;
                 text-transform: none;
+
+                @include respond (phone){
+                    font-size: 15px;
+                }
             }
         }
     }
