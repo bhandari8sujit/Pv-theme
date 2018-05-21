@@ -75,12 +75,12 @@
             & .after-2{
                 z-index: 2;
                 position: absolute;
-                top: -5%;
-                left: 0%;
-                width: 100%;
-                height: 100%;
+                top: 4%;
+                left: 10%;
+                width: 80%;
+                height: 80%;
                 display: none;        
-                //border: 6px solid #fff;
+                border: 6px solid #fff;
             }
 
             & .after{
@@ -106,16 +106,13 @@
             & :hover .after-2{
                 display: block;
                 background: rgba(0, 0, 0, .6);
-                
-                @include respond(phone){
-                   background: none;
-                }
 
             }
 
             & :hover .after{
                 display: block;
-               // background: rgba(0, 0, 0, .6);        
+               //background: rgba(0, 0, 0, .6);
+               filter: brightness(70%)   
             }
 
         }

@@ -6,6 +6,16 @@
         & .card-content{
             background:#f7f7f7;
         }
+
+        @include respond(phone){
+            margin-left: 0px;    
+        } 
+    }
+    .col-md-12{
+        @include respond(phone){
+            padding-left: 0px;    
+            padding-right: 0px;
+        }  
     }
    
 }  

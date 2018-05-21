@@ -53,7 +53,9 @@ gulp.task('htmlmin', function() {
             prefix: '@@',
             basepath: '@file'
         }))
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin({ 
+            collapseWhitespace: true,
+            removeComments: true }))
         .pipe(gulp.dest('dist/'))
         .pipe(bs.stream());
 });
@@ -100,7 +102,6 @@ gulp.task('styleguide:generate', function() {
         }))
         .pipe(gulp.dest(outputPath));
 });
-
 
 gulp.task('styleguide:applystyles', function() {
     return gulp.src('dist/css/styles.min.css')

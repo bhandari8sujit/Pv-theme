@@ -16,4 +16,10 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
+dl{
+    @include respond(tab-port){
+        display: none;
+    }
+}
 }

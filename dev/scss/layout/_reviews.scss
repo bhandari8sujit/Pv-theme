@@ -31,10 +31,11 @@
 }
 
 .review-wrap {
-    margin: 0 -15px 30px;
+   // margin: 0 -15px 30px;
     &__review {
         width: 33.333333%;
         padding: 0 15px;
+        margin-bottom: 30px;
         img {
             width: 75px;
         }
@@ -44,33 +45,34 @@
         @include respond(phone) {
             width: 100%;
         }
+
+        & .review-card {
+            border: 1px solid #ccc;
+            padding: 30px;
+            
+            &__header {
+                img {
+                    width: 75px;
+                    margin-bottom: 10px;
+                }
+                .author-name {
+                    font-size: 18px;
+                }
+                .rating {
+                    li {
+                        margin: 0 -2px;
+                        padding: 0;
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+         
+        }
     }
 }
 
-.review-card {
-    border: 1px solid #ccc;
-    padding: 30px;
-    margin-bottom: 30px;
-    &__header {
-        img {
-            width: 75px;
-            margin-bottom: 10px;
-        }
-        .author-name {
-            font-size: 18px;
-        }
-        .rating {
-            li {
-                margin: 0 -2px;
-                padding: 0;
-                i {
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-    &__body {}
-}
 
 .review-view-more {
     background-color: #ccc;

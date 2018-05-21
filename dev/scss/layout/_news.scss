@@ -5,6 +5,10 @@
         & .card-content{
             background: #f7f7f7;
         }
+
+        @include respond(phone){
+            margin-left: 0px;    
+        } 
     }
     .social{
         li{
