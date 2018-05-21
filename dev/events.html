@@ -30,14 +30,105 @@
                         <span>Events</span>
                     </div>
                     <hr class="content-hr m-b-50">                    
-                    <div class="row m-b-100 text-center">
-                        <div class="col-md-12">
-                            <ul class="events-list m-b-30">
-                                <li class="active">Upcoming</li>
-                                <li><a href="#">Past Events</a></li>
-                            </ul>
-                            <div class="alert alert-info text-center" role="alert">There are currently no upcoming events. Please check back later!</div>
+                    <div class="row m-b-100">
+                    <div class="col-md-12 text-center">
+
+                        <ul class="nav nav-tabs m-b-50 events-list ">
+                            <li class="active"><a data-toggle="tab" href="#home">Upcoming Events</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Past Events</a></li>
+                        </ul>
+                                
+                        <div class="tab-content">
+
+                          <div id="home" class="tab-pane fade in active">
+                            <div class="alert alert-info text-center" role="alert">There are currently no upcoming events. Please check back later!</div>                         
+                          </div>
+
+                          <div id="menu1" class="tab-pane fade">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-img" style="background-image: url(images/003.jpg);">
+                                        </div>                                
+                                        <div class="card-content p-b-15">
+                                            <p class="date m-b-15">AUG 19</p>
+                                            <p class="title m-b-15">News 1</p>
+                                            <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                                            <a href="#" class="title">VIEW EVENT</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-img" style="background-image: url(images/004.jpg);">
+                                        </div>                                
+                                        <div class="card-content p-b-15">
+                                            <p class="date m-b-15">AUG 19</p>
+                                            <p class="title m-b-15">News 1</p>
+                                            <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                                            <a href="#" class="title">VIEW EVENT</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-img" style="background-image: url(images/no-img.png);">
+                                        </div>
+                                        
+                                        <div class="card-content p-b-15">
+                                            <p class="date m-b-15">AUG 19</p>
+                                            <p class="title m-b-15">News 1</p>
+                                            <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                                            <a href="#" class="title">VIEW EVENT</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-img" style="background-image: url(images/no-img.png);">
+                                        </div>
+                                        
+                                        <div class="card-content p-b-15">
+                                            <p class="date m-b-15">AUG 19</p>
+                                            <p class="title m-b-15">News 1</p>
+                                            <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                                            <a href="#" class="title">VIEW EVENT</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-img" style="background-image: url(images/003.jpg);">
+                                        </div>
+
+                                        <div class="card-content p-b-15">
+                                            <p class="date m-b-15">AUG 19</p>
+                                            <p class="title m-b-15">News 1</p>
+                                            <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                                            <a href="#" class="title">VIEW EVENT</a>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card">
+                                        <div class="card-img" style="background-image: url(images/005.jpg);">
+                                        </div>
+
+                                        <div class="card-content p-b-15">
+                                            <p class="date m-b-15">AUG 19</p>
+                                            <p class="title m-b-15">News 1</p>
+                                            <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                                            <a href="#" class="title">VIEW EVENT</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
                     </div>
                 </div>   
             </div>
@@ -46,6 +137,9 @@
 </section>
 
 @@include('includes/footer.html')
+
+<script src="./scripts/jquery.min.js"></script>
+<script src="./scripts/bootstrap.min.js"></script>
 
 </body>
 </html>

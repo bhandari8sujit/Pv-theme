@@ -1,4 +1,18 @@
 #theme-gallery-page{
+
+    .nav{
+        li{
+            a{
+                display: inline;
+            }
+        }
+    }
+
+    
+
+
+
+
     .gallery-thumb{
         position: relative;
         img{
@@ -57,10 +71,12 @@
 
             @include respond(tab-port) {
                 width: 50%;
+                
             }
             @include respond(phone) {
                 width: 100%;
                 filter: brightness(90%);
+                padding: 0 0;
             }
             .grid-item__thumb{
                 margin-bottom: 30px;
@@ -107,6 +123,8 @@
                 display: block;
                 background: rgba(0, 0, 0, .6);
                 filter: brightness(50%);
+                -webkit-transition: all .7s ease 0s; 
+                transition: all .7s ease 0s; 
 
                 @include respond(phone){
                     border: none;
@@ -117,6 +135,9 @@
             & :hover .after{
                 display: block;
                //background: rgba(0, 0, 0, .6);
+               -webkit-transition: all .7s ease 0s; 
+               transition: all .7s ease 0s; 
+
                
             }
 
