@@ -32,36 +32,82 @@
                     <hr class="content-hr m-b-50">                    
                     <div class="row text-center">
                         <div class="col-md-12">
-                            <ul class="events-list m-b-50">
-                                <li class="active">Albums</li>
-                                <li><a href="#">Videos</a></li>
-                            </ul>
-                            <div class="gallery-thumb text-left m-b-80">   
+                                <ul class="nav nav-tabs m-b-50 events-list ">
+                                    <li class="active"><a data-toggle="tab" href="#home">Albums</a></li>
+                                    <li><a data-toggle="tab" href="#menu1">Videos</a></li>
+                                </ul>
+                                <!--
+                                
+                                    <div class="gallery-thumb text-left m-b-80">   
+                                        <img src="./images/002.jpg">
 
-                                <img src="./images/002.jpg">
+                                        <div class="gallery-thumb_info p-l-100 p-t-50">
+                                            <h4>Album Name</h4>
+                                            <p>200 Photos</p>
+                                            <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
 
-                                <div class="gallery-thumb_info p-l-100 p-t-50">
-                                    <h4>Album Name</h4>
-                                    <p>200 Photos</p>
-                                    <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
+                                        </div>
+                                    </div>  
+                                
+                                    <div class="gallery-thumb text-right m-b-50">   
+                                        <img src="./images/002.jpg">
 
-                                </div>
-                            </div>  
-                            
-                            <div class="gallery-thumb text-right m-b-50">   
-                                <img src="./images/002.jpg">
-                                <div class="gallery-thumb_info gti-left p-l-100 p-t-50 text-left">
-                                    <h4>Album Name</h4>
-                                    <p>200 Photos</p>
-                                    <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
+                                        <div class="gallery-thumb_info gti-left p-l-100 p-t-50 text-left">
+                                            <h4>Album Name</h4>
+                                            <p>200 Photos</p>
+                                            <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
+                                        </div>
+                                    </div>
+
+                                -->
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active">
+                                        <div class="gallery-thumb text-left m-b-80">   
+                                                <img src="./images/002.jpg">        
+                                                <div class="gallery-thumb_info p-l-100 p-t-50">
+                                                    <h4>Album Name</h4>
+                                                    <p>200 Photos</p>
+                                                    <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>        
+                                                </div>
+                                        </div>  
+                                            
+                                        <div class="gallery-thumb text-right m-b-50">   
+                                            <img src="./images/002.jpg">
+    
+                                            <div class="gallery-thumb_info gti-left p-l-100 p-t-50 text-left">
+                                                <h4>Album Name</h4>
+                                                <p>200 Photos</p>
+                                                <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
+                                            </div>
+                                        </div>
+                                    </div>
+              
+                                    <div id="menu1" class="tab-pane fade">
+                                        <div class="col-md-6 col-xs-12 text-left">
+                                                <video width="100%" height="440px" controls>
+                                                    <source src="movie.mp4" type="video/mp4">                                    
+                                                </video>
+                                                <div class="album__details m-t-5">
+                                                    <p class="album__title">Video</p>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-md-6 col-xs-12 text-left">
+                                                <video width="100%" height="440px" controls>
+                                                    <source src="movie.mp4" type="video/mp4">                                    
+                                                </video>
+                                                <div class="album__details m-t-5">
+                                                    <p class="album__title">Video</p>
+                                                </div>
+                                        </div>                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
                     <div class="theme-loader m-t-20 m-b-20 text-center">
                     </div>                            
-                    <button class= "btn btn-dark btn-news m-t-20 m-b-100">View more albums</button>
-                        
+                    <button class= "btn btn-dark btn-news m-t-20 m-b-100">View more albums</button>                      
                     
                 </div>   
             </div>
@@ -71,5 +117,7 @@
 
 @@include('includes/footer.html')
 
+<script src="./scripts/jquery.min.js"></script>
+<script src="./scripts/bootstrap.min.js"></script>
 </body>
 </html>
