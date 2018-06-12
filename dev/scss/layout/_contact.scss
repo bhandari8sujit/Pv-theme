@@ -1,7 +1,7 @@
 #theme-contact-page{
 
     .contact-hr{
-    border-top: 1px solid #979797;
+      //  border-top: 1px solid #979797;
     }
 
     .line{
@@ -35,10 +35,10 @@
             position: absolute;
             top: -15%;
             right: -1%;
-            background: red;
+         //  background: red;
             border-radius: 50%;
             width: 15px;
-            color: #fff;
+         //   color: #fff;
             height: 18px;
             padding-left: 1.5px;
             font-size: 17px;
@@ -70,13 +70,15 @@
             }   
         }
     }
+
     & .content{
     
         p{
-            color:#000;
+        //    color:#000;
             margin-bottom: 10px;
         }
     }
+    
     .p-l-30{
         @include respond(tab-port){
             padding-left: 15px;

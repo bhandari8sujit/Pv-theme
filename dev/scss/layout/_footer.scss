@@ -1,5 +1,5 @@
 .theme-footer {    
-    background: #000;
+//    background: #000;
     padding-bottom: 45px;
     position: relative;
     right: 0;
@@ -19,7 +19,7 @@
         //font-size: 20px;
         @include font-size(2.8);
         text-transform: uppercase;
-        color: #525252;
+    //    color: #525252;
 
         @include respond(phone){
             @include font-size(2);
@@ -62,7 +62,7 @@
         line-height: 30px;
         //font-size: 18px;                    
         @include font-size(1.8);
-        color: #FFFFFF;
+    //    color: #FFFFFF;
         
         @include respond(phone){
             @include font-size(1.6);
@@ -78,12 +78,12 @@
                 display: inline-block;
                 margin-right: 28px;
                 
-                a{
-                    color: #fff;
-                }
+            //    a{
+            //        color: #fff;
+            //    }
 
                 i{
-                    color: #fff;
+                //    color: #fff;
                     width: 20px;
                     height: 17px;
                 }
@@ -101,7 +101,7 @@
                     font-style: Regular;
                     @include font-size(1.8);
                     line-height: 40px;
-                    color: #fff;
+                //    color: #fff;
 
                     @include respond(phone){
                         @include font-size(1.6);
@@ -165,7 +165,7 @@
     .bottom-hr{
         margin-top: 27px;
         margin-bottom: 30px;
-        border-top: 1px solid #444;
+    //    border-top: 1px solid #444;
 
         @include respond(tab-port){
             margin-top: 60px;

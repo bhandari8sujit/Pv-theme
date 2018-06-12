@@ -1,0 +1,30 @@
+/*	===================================================================
+	Mixins
+	=================================================================== */
+
+	// Links Mixin
+	@mixin links ($link, $visited, $hover, $active) {
+		& {
+			color: $link;
+			&:visited {
+				color: $visited;
+			}
+			&:hover {
+				color: $hover;
+				text-decoration: none;
+			}
+			&:active, &:focus {
+				color: $active;
+				text-decoration: none;
+			}
+		}
+	}
+
+	// Animation Mixin
+	@mixin keyframes($name) {
+		@-webkit-keyframes #{$name} {@content}
+		@-moz-keyframes #{$name} {@content}
+		@-ms-keyframes #{$name} {@content}
+		@-o-keyframes #{$name} {@content}
+		@keyframes #{$name} {@content}
+	}

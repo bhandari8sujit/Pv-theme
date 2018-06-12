@@ -27,59 +27,48 @@
             <div class="content">    
                 <div class="container">        
                     <div class="cnt-title cnt-title-about">
-                        <span>Gallery</span>
+                        <h2>Gallery</h2>
                     </div>
                     <hr class="content-hr m-b-50">                    
                     <div class="row text-center">
                         <div class="col-md-12">
+                            
                                 <ul class="nav nav-tabs m-b-50 events-list ">
                                     <li class="active"><a data-toggle="tab" href="#home">Albums</a></li>
                                     <li><a data-toggle="tab" href="#menu1">Videos</a></li>
                                 </ul>
-                                <!--
-                                
-                                    <div class="gallery-thumb text-left m-b-80">   
-                                        <img src="./images/002.jpg">
 
-                                        <div class="gallery-thumb_info p-l-100 p-t-50">
-                                            <h4>Album Name</h4>
-                                            <p>200 Photos</p>
-                                            <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
-
-                                        </div>
-                                    </div>  
-                                
-                                    <div class="gallery-thumb text-right m-b-50">   
-                                        <img src="./images/002.jpg">
-
-                                        <div class="gallery-thumb_info gti-left p-l-100 p-t-50 text-left">
-                                            <h4>Album Name</h4>
-                                            <p>200 Photos</p>
-                                            <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
-                                        </div>
-                                    </div>
-
-                                -->
                                 <div class="tab-content">
                                     <div id="home" class="tab-pane fade in active">
                                         <div class="gallery-thumb text-left m-b-80">   
-                                                <img src="./images/002.jpg">        
-                                                <div class="gallery-thumb_info p-l-100 p-t-50">
-                                                    <h4>Album Name</h4>
-                                                    <p>200 Photos</p>
-                                                    <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>        
-                                                </div>
+                                            <div class="gallery-thumb-img" style="background-image: url(images/002.jpg)"></div>   
+                                            <div class="gallery-thumb-info p-l-100 p-t-50">
+                                                <h4>Album Name</h4>
+                                                <p>200 Photos</p>
+                                                <a  href= 'gallery-albums.html' class="btn btn-light btn-gallery-page m-t-20">View Album</a>        
+                                            </div>
                                         </div>  
                                             
-                                        <div class="gallery-thumb text-right m-b-50">   
-                                            <img src="./images/002.jpg">
+                                        <!-- <div class="gallery-thumb m-b-50">   
+                                            <div class="gallery-thumb-img pull-right" style="background-image: url(images/002.jpg)"></div>  
     
-                                            <div class="gallery-thumb_info gti-left p-l-100 p-t-50 text-left">
+                                            <div class="gallery-thumb-info gti-left p-l-100 p-t-50 text-left">
                                                 <h4>Album Name</h4>
                                                 <p>200 Photos</p>
                                                 <button class="btn btn-light btn-gallery-page m-t-20">View Album</button>
                                             </div>
-                                        </div>
+                                        </div> -->
+
+                                        <div class="gallery-thumb text-left m-b-80">   
+                                            <div class="gallery-thumb-img pull-right" style="background-image: url(images/002.jpg)"></div>   
+                                            <div class="gallery-thumb-info gti-left p-l-100 p-t-50">
+                                                <h4>Album Name</h4>
+                                                <p>200 Photos</p>
+                                                <a  href= 'gallery-albums.html' class="btn btn-light btn-gallery-page m-t-20">View Album</a>
+                                            </div>
+                                        </div>  
+
+                                    
                                     </div>
               
                                     <div id="menu1" class="tab-pane fade">
@@ -102,6 +91,7 @@
                                         </div>                                        
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
 

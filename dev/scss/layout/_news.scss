@@ -2,9 +2,9 @@
     .card{
         margin-right: 0px;
         margin-bottom: 10px;
-        & .card-content{
-            background: #f7f7f7;
-        }
+        //& .card-content{
+        //    background: #f7f7f7;
+        //}
 
         @include respond(phone){
             margin-left: 0px;    
@@ -12,9 +12,9 @@
     }
     .social{
         li{
-            i{
-                color:#7c7c7c;
-            }
+            //i{
+            //    color:#7c7c7c;
+            //}
         }
     }
 

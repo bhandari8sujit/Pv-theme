@@ -93,6 +93,7 @@
     height: 44px;
     font-size: 18px;
     line-height: 22px;
+    padding-top: 9px;
 }
 .btn-404{
     widows: 242px;
@@ -105,4 +106,7 @@
 .btn:focus, .btn:active:focus{
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: -2px;
+}
+.btn{
+    transition:all .2s ease-in-out;
 }
