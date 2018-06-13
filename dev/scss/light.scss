@@ -5,3 +5,123 @@ body {
     color: $color-base;
 }
 
+.theme-footer{
+
+    background: #F4F4F4;
+    a{
+        color: $color-base;
+
+        &:hover {
+            text-decoration: none;
+            color: $color-black;
+        }
+    }
+    .btn-footer{
+        background: $color-base;
+        color: #fff;
+
+        &:hover{
+            background:$color-black;
+            
+        }
+    }
+    .bottom-hr{
+        border-top:1px solid $color-white;
+    }
+
+}
+
+.theme-header{    
+
+    .dropdown-content {
+        background-color: $color-white;        
+    }
+    .dropdown-content a {
+        color: $color-base;
+        background: $color-white
+    }
+    .dropdown-content a:hover{
+        background: #c4c4c4;
+        color: $color-black;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .theme-logo{
+        color: $color-base;
+
+        &:hover{
+            color: $color-black;
+        }
+    }
+}
+
+#theme-news-page{
+    .social{
+        a{
+            color:$color-base;
+        }
+    }
+    .btn-dark{    
+        background: $color-base;        
+        color: $color-white;
+
+        &:hover{        
+            background: $color-black;                        
+        }
+    }
+        
+}
+#theme-gallery-page{
+
+    .social{
+        a{
+            color:$color-base;
+        }
+    }
+
+    .events-list{
+        a{
+            color: $color-base;            
+        }
+        .active{
+            a{
+                color: $color-black;
+            }
+        }
+    }
+
+    .gallery-thumb-info{
+        background:  #F4F4F4;
+
+        .btn-gallery-page{
+            background: $color-base;
+            color: $color-white;
+            
+            &:hover{
+                background: $color-black;                
+            }
+        }
+    }
+    
+    .btn-news{
+        background: $color-base;
+            color: $color-white;
+            
+        &:hover{
+            background: $color-black;                
+        }
+    }    
+
+}
+
+#theme-contact-page{
+    .btn-dark{
+        background: $color-base;
+            color: $color-white;
+            
+        &:hover{
+            background: $color-black;                
+        }
+    }  
+}

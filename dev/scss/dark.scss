@@ -1,5 +1,214 @@
 @import "theme/skin/dark/vars";
 
 body {
-    background: $color-body-bg;
+    background: $color-base;
+    color: $color-anchor;
 }
+
+//h1,h2,h3,h4,h5,h6,p{
+//    color: $color-white;
+//}
+
+.content{
+    //.cnt-title{  
+    //    .cnt-title-main{
+    //        color: $color-white;                
+    //    }     
+    //    
+    //}
+
+    //.content-body{
+    //    .content-body_desc{
+    //        color: $color-white;
+    //    }
+    //}
+}
+
+.card{    
+    background: $color-base;    
+
+    //.card-content{
+    //    a{
+    //        color: $color-white;
+//
+    //        text-decoration: none;        
+    //        i{
+    //            color:$color-white;
+    //        }
+    //    }
+    //}
+}
+
+#theme-news{
+    background: $color-black;
+}
+
+.theme-footer{
+    background: $color-header-bg;
+    a{
+        color: $color-anchor;
+
+        //&:hover {
+        //    text-decoration: none;
+        //    color: $color-white;
+        //}
+    }
+    //.btn-footer{
+    //    background: $color-base;
+    //    color: #fff;
+//
+    //    &:hover{
+    //        background:$color-black;
+    //        
+    //    }
+    //}
+    .bottom-hr{
+        border-top:1px solid $border-color;
+    }
+
+}
+
+.theme-header{
+    background: $color-black;    
+
+    .dropdown-content {
+        background-color: $color-black;        
+    }
+    .dropdown-content a {
+        color: $color-anchor;
+        background: $color-black;
+    }
+    .dropdown-content a:hover{
+        background:$color-btn-hover;
+        color: $color-black;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    //.theme-logo{
+    //    color: $color-white;
+//
+    //    &:hover{
+    //        color: $color-anchor;
+    //    }
+    //}
+}
+
+.btn{    
+    background: $color-white;        
+    color: $color-black;
+//    &:hover{        
+//        background: $color-btn-hover;                        
+//        color: $color-white;
+//    }
+}
+
+#theme-news-page{
+    //.social{
+    //    a{
+    //        color:$color-anchor;
+    //    }
+    //}
+    
+    .card{
+        background: $color-black;
+        margin-bottom: 30px;
+    }
+        
+}
+#theme-gallery-page{
+
+    //.social{
+    //    a{
+    //        color:$color-anchor;
+    //    }
+    //}
+
+    .events-list{
+        a{                
+            background: none;        
+        }
+      
+    }
+    //.events-list{
+    //    a{
+    //        color: $color-anchor;    
+    //        background: none;        
+    //    }
+    //    .active{
+    //        a{
+    //            color: $color-white;
+    //            border-bottom: 2px solid;
+    //        }
+    //    }
+    //}
+
+    .gallery-thumb-info{
+        background:$color-black;
+    }
+    
+    //.btn-news{
+    //    background: $color-white;
+    //    color: $color-black;
+    //        
+    //    &:hover{
+    //        background: $color-btn-hover;  
+    //        color: $color-white;              
+    //    }
+    //}    
+
+}
+
+#theme-events-page{
+    .card{    
+        background: $color-black;
+        margin-bottom: 30px;  
+    
+        .card-content{
+            background: $color-black;    
+            //a{
+            //    color: $color-white;
+    //
+            //    text-decoration: none;        
+            //    i{
+            //        color:$color-white;
+            //    }
+            //}
+        }
+    }
+
+    //.btn-dark{    
+    //    background: $color-white;        
+    //    color: $color-black;
+//
+    //    &:hover{        
+    //        background: $color-btn-hover;                        
+    //        color: $color-white;
+    //    }
+    //}
+
+    .events-list{
+        a{                
+            background: none;        
+        }
+      
+    }
+
+    //.social{
+    //    a{
+    //        color:$color-anchor;
+    //    }
+    //}
+}
+
+//#theme-contact-page{
+//    .btn-dark{
+//        background: $color-white;
+//        color: $color-black;
+//            
+//        &:hover{
+//            background: $color-btn-hover;  
+//            color: $color-white;                     
+//        }
+//    }  
+//}

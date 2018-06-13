@@ -9,7 +9,7 @@
     <title>Imagine Creations</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/light.min.css">
+    <link rel="stylesheet" href="css/dark.min.css">
     <link rel="stylesheet" href="css/font-default.min.css">
     <link rel="stylesheet" href="css/color-default.min.css">
     <!--[if lt IE 9]>
@@ -21,13 +21,14 @@
 <body>
 @@include('includes/header.html')
 
+<div class="wrap-main">
 <section id="theme-gallery-page">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="content">    
                 <div class="container">        
                     <div class="cnt-title cnt-title-about">
-                        <h2>Gallery</h2>
+                        <h2 class="cnt-title-main">Gallery</h2>
                     </div>
                     <hr class="content-hr m-b-50">                    
                     <div class="row text-center">
@@ -97,13 +98,14 @@
 
                     <div class="theme-loader m-t-20 m-b-20 text-center">
                     </div>                            
-                    <button class= "btn btn-dark btn-news m-t-20 m-b-100">View more albums</button>                      
+                    <button class= "btn btn-dark btn-news m-t-20 m-b-100">View more Albums</button>                      
                     
                 </div>   
             </div>
         </div>
     </div>
 </section>
+</div>
 
 @@include('includes/footer.html')
 

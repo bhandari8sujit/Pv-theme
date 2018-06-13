@@ -1,5 +1,9 @@
 .theme-header{
    padding:28px;
+   position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 
     & .theme-logo{
 //    color: #000000;

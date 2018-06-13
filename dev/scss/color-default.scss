@@ -6,6 +6,130 @@ h3,
 h4,
 h5,
 h6,
-strong {
-    color: $color-header;
+{
+    color: $color-brand;
 }
+
+.card{        
+    .card-content{
+        a{
+            color: $color-brand;
+
+            text-decoration: none;        
+            i{
+                color:$color-brand;
+            }
+        }
+    }
+}
+
+.owl-carousel .owl-nav button span {    
+    color:$color-brand;
+}
+
+.theme-header{
+    .theme-logo{
+        color: $color-brand;
+    }
+
+    a{        
+        &:hover {
+            text-decoration: none;
+            color: $color-brand;
+        }
+    }
+
+    .dropdown-content a:hover{
+        background:$color-brand;
+        color: $color-white;
+    }
+
+    .navbar-default {
+        .navbar-nav>li>a:hover{
+        color: $color-brand;
+        }
+    }
+}
+
+.theme-footer{
+    a{
+        &:hover {
+            text-decoration: none;
+            color: $color-brand;
+        }
+    }
+    .footer-title{
+        color: $color-brand;
+    }
+}
+
+
+#theme-events-page{
+.events-list{
+    li{
+        a{
+            color: $color-base;
+
+            &:hover{
+                color: $color-brand;
+                
+            }  
+        }  
+
+    }
+    .active{
+        a{
+            color: $color-white ;            
+            border-bottom: 2px solid;
+        }
+    }
+}
+}
+
+#theme-gallery-page{
+    .events-list{
+        li{
+            a{
+                color: $color-base;
+    
+                &:hover{
+                    color: $color-brand;
+                    
+                }  
+            }  
+    
+        }
+        .active{
+            a{
+                color: $color-white ;            
+                border-bottom: 2px solid;
+            }
+        }
+    }
+}
+
+
+.btn:hover{
+    background: $color-brand;
+}
+
+.social{
+    a{
+        color:$color-base;
+
+        &:hover{
+            color:$color-brand;
+        }
+    }
+}
+
+.pull-left{
+    a:hover{
+        color:$color-brand;
+    }
+}
+
+#theme-contact-page .contact-form-input i {
+    background:$color-brand;
+}
+

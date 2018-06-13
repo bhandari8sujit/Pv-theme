@@ -1,7 +1,11 @@
+.wrap-main{
+    margin-top: 106px;
+}
+
 #theme-banner{
     padding: 0px 28px 28px;
     width: 100%;
-    height: calc(100% - 106px);    
+    height: calc(100vh - 106px);    
     display: block;
     margin-bottom: -28px;
     position: relative;

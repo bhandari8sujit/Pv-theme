@@ -9,7 +9,7 @@
     <title>Imagine Creations</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/light.min.css">
+    <link rel="stylesheet" href="css/dark.min.css">
     <link rel="stylesheet" href="css/font-default.min.css">
     <link rel="stylesheet" href="css/color-default.min.css">
     <!--[if lt IE 9]>
@@ -20,7 +20,7 @@
 
 <body>
 @@include('includes/header.html')
-
+<div class="wrap-main">
 <section id="theme-events-page">
     <div class="container-fluid">
         <div class="row text-center">
@@ -32,7 +32,7 @@
                     <hr class="content-hr m-b-50">
 
                     <div style="position: relative;">
-                        <span class="pull-left"><a href="#"><i class="pvi-arrow-left"></i>&nbsp;Back to all events</a></span>
+                        <span class="pull-left"><a href="events.html"><i class="pvi-arrow-left"></i>&nbsp;Back to all events</a></span>
                         <ul class="social pull-right m-b-60">
                             <li><a href="#"><i class="pvi-facebook"></i></a></li>
                             <li><a href="#"><i class="pvi-twitter"></i></a></li>
@@ -44,7 +44,7 @@
                     <div class="row m-b-50 text-center">
                         <div class="col-md-12">            
                             <div class="event-desc text-left col-md-offset-3 col-sm-offset-2"> 
-                                <p>Jul 24, 2023 | San Fransisco</p>
+                                <h6>Jul 24, 2023 | San Fransisco</h6>
                                 <h3>From the Light - Wolfgang Ines</h3>
                                 <button class= "btn btn-dark btn-rsvp m-t-20 m-b-60">RSVP</button>
                                               
@@ -62,7 +62,7 @@
 
                         <div class="col-md-6 col-sm-12 text-left">
                             <div class="m-b-30">
-                                <strong>AND LOCATION</strong> <br><br>                           
+                                <h6>AND LOCATION</h6>                   
                                 Jul 24 - 31, 2023 at 7:00pm - 11:00pm IDT<br>
 
                                 3021 Lady Bug Drive Brooklyn,<br>
@@ -70,7 +70,7 @@
                                 United States, 1119771
                             </div>
                             <div class="m-b-30">
-                                <strong>THE EVENT</strong><br><br>
+                                <h6>THE EVENT</h6>
                                 
                                 Nam in semper urna. Vestibulum eu ornare sem. Pellentesque vel scelerisque felis, ut consectetur mauris. Sed ac ullamcorper turpis. Maecenas tincidunt consequat convallis. Vivamus in ligula in nisi vestibulum semper. more…<br><br>
                                 
@@ -85,7 +85,7 @@
         </div>
     </div>
 </section>
-
+</div>
 @@include('includes/footer.html')
 
 </body>

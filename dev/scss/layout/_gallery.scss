@@ -119,12 +119,12 @@
                 left: 10px;
                 bottom: 10px;
                 right: 10px;
-            //    background: rgba(0, 0, 0, .5);
+                background: rgba(0, 0, 0, .5);
                 text-align: left;
                 padding: 15px;
-            //    color: #fff;
+                color: #fff;
                 transform: scaleY(0);
-                transition: transform .5s;
+                transition: transform .4s;
 
                 &>div{
                     position: absolute;

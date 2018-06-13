@@ -7,13 +7,13 @@ h6 {
     margin: 0 0 15px;
 }
 
-//a {
-//    @include transition(all, .5s, ease);
-//    &:hover {
-//        text-decoration: none;
-//        color: #555;
-//    }
-//}
+a {
+    @include transition(all, .5s, ease);
+    &:hover {
+        text-decoration: none;
+        //color: #555;
+    }
+}
 
 p {
     margin: 0 0 30px;

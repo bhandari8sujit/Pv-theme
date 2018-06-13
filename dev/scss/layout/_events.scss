@@ -1,5 +1,4 @@
 #theme-events-page{
-
     .card{
         margin-right: 0px;
         margin-bottom: 10px;
@@ -24,7 +23,7 @@
         li{
             a{
                 //    color:#777;
-        
+                display: inline;
                     
                     &:focus{
                         text-decoration: none;
@@ -39,10 +38,10 @@
 
 .event-desc{
     @include respond(tab-port){
-        margin-top: 30px;    
+        margin-top: 50px;    
     }     
     @include respond(phone){
-        margin-top: 70px;    
+        margin-top: 80px;    
     }   
 
     p{
@@ -79,7 +78,7 @@
     @include respond(phone){
         float:left !important;      
         margin-top: 40px;
-        left: 1%;
+        left: -1%;
         position: absolute;
         padding-left: 0px;
     }
@@ -96,6 +95,13 @@
         //        color: #000;
         //    }
         }
+    }
+}
+
+.social2{
+        
+    @include respond(phone){               
+        left: 1%;
     }
 }
 
@@ -132,10 +138,7 @@
             }
         }
     }
-     .active{
-        color: #000;
-        border-bottom: 2px solid #000;
-    }
+
 
     .alert-info{
         background:#B8DAFF !important;
