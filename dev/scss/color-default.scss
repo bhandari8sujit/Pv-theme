@@ -23,7 +23,7 @@ h6,
     }
 }
 
-.owl-carousel .owl-nav button span {    
+.owl-carousel .owl-nav button span i{    
     color:$color-brand;
 }
 
@@ -64,49 +64,50 @@ h6,
 }
 
 
-#theme-events-page{
-.events-list{
-    li{
-        a{
-            color: $color-base;
 
-            &:hover{
-                color: $color-brand;
-                
-            }  
-        }  
+//.events-list{
+//    li{
+//        a{
+//            //color: $color-base !important;
+//            background: none !important;
+//
+//            &:hover{
+//                color: $color-brand;
+//                
+//            }  
+//        }  
+//
+//    }
+//    .active{
+//        a{
+//            color: $color-white;            
+//            border-bottom: 2px solid;
+//        }
+//    }
+//}
+//
 
-    }
-    .active{
-        a{
-            color: $color-white ;            
-            border-bottom: 2px solid;
-        }
-    }
-}
-}
-
-#theme-gallery-page{
-    .events-list{
-        li{
-            a{
-                color: $color-base;
-    
-                &:hover{
-                    color: $color-brand;
-                    
-                }  
-            }  
-    
-        }
-        .active{
-            a{
-                color: $color-white ;            
-                border-bottom: 2px solid;
-            }
-        }
-    }
-}
+//#theme-gallery-page{
+//    .events-list{
+//        li{
+//            a{
+//                color: $color-base;
+//    
+//                &:hover{
+//                    color: $color-brand;
+//                    
+//                }  
+//            }  
+//    
+//        }
+//        .active{
+//            a{
+//                color: $color-white ;            
+//                border-bottom: 2px solid;
+//            }
+//        }
+//    }
+//}
 
 
 .btn:hover{
@@ -129,7 +130,6 @@ h6,
     }
 }
 
-#theme-contact-page .contact-form-input i {
-    background:$color-brand;
+.theme-gallery-home__list:after {
+    background-color: rgba(0,0,0,0.5);
 }
-

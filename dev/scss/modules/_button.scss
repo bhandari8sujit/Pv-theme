@@ -3,11 +3,13 @@
     color:#000;
     border-radius: 0px;
 }
+
 .btn-dark{
     border-radius: 0;
     background: #000;
     color:#fff;
 }
+
 .btn-cta{
     background: #fff;
     color:#000;
@@ -17,18 +19,21 @@
 .event-btn{
     width: 202px !important;
 }
+
 .btn-rsvp{
     width: 100px;
     height: 44px;
     font-size: 20px;
     line-break: 24px;
 }
+
 .btn-news{
     width: 207px;
     height: 44px;
     font-size: 20px;
     line-break: 24px;
 }
+
 .btn-reviews{
     width: 258px;
 }
@@ -95,6 +100,7 @@
     line-height: 22px;
     padding-top: 9px;
 }
+
 .btn-404{
     widows: 242px;
     height: 44px;
@@ -103,10 +109,19 @@
     padding: 8px 14px;
 
 }
+
 .btn:focus, .btn:active:focus{
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: -2px;
 }
+
 .btn{
-    transition:all .2s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+.btn-send{
+    width: 168px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 24px;
 }

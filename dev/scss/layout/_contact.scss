@@ -1,17 +1,10 @@
-#theme-contact-page{
+.content-contact{
 
-//    .contact-hr{
-//  border-top: 1px solid #979797;
-//    }
-
+    .contact-hr{
+        border-top:1px solid;
+    }
     .line{
         position: relative;
-    }
-    .send-btn{
-        width: 168px;
-        height: 44px;
-        font-size: 20px;
-        line-height: 24px;
     }
 
     .line::after {
@@ -21,7 +14,7 @@
         left:100%;
         z-index:10; 
         width:1px; 
-        background: #979797;
+      //  background: #979797;
 
         @include respond(tab-port){
             display: none;
@@ -35,17 +28,37 @@
             position: absolute;
             top: -15%;
             right: -1%;
-            //background: red;
+            background: red;
             border-radius: 50%;
-            width: 15px;
+            width: 18px;
             color: #fff;
-            height: 18px;
-            padding-left: 1.5px;
+            height: 19px;
+            padding-left: 3px;
             font-size: 17px;
 
         }        
     }
 
+    .line{
+        position: relative;
+    }
+
+    .line::after {
+        content:''; 
+        position: absolute; 
+        top:1%; bottom:-85%; 
+        left:100%;
+        z-index:10; 
+        width:1px; 
+        background: #777;
+
+        @include respond(tab-port){
+            display: none;
+        }
+
+    }    
+
+    
     ul{
     list-style-type: none;
     padding-left: 0px;
@@ -70,18 +83,19 @@
             }   
         }
     }
-
-    & .content{
-    
-        p{
-        //    color:#000;
-            margin-bottom: 10px;
-        }
-    }
-    
     .p-l-30{
         @include respond(tab-port){
             padding-left: 15px;
         }
     }
 }
+
+    //& .content{
+    //
+    //    p{
+    //    //    color:#000;
+    //        margin-bottom: 10px;
+    //    }
+    //}
+    
+

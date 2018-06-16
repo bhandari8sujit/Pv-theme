@@ -1,21 +1,18 @@
-#theme-about-page{
+.theme-about-page{
 
     .cnt-title-about{
-        @include font-size(2.8);        
-        margin-top: 57px !important;
+        margin-top: 57px;
         margin-bottom: 42px;
         line-height: 35px;
     }
-    .content-hr{
-        margin: 0 0;
-    }
-    .content-about-img{
-        height: 608px;
-        width: 100%;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-    }
+
+    //.content-about-img{
+    //    height: 608px;
+    //    width: 100%;
+    //    background-size: cover !important;
+    //    background-position: center !important;
+    //    background-repeat: no-repeat !important;
+    //}
     
     dl{
         @include respond(tab-port){

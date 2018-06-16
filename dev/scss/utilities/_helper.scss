@@ -27,6 +27,9 @@
     &--1-line {
         @include ellipsis(20px, 1);
     }
+    &--1-2-line {
+        @include ellipsis(25px, 1);
+    }
     &--2-line {
         @include ellipsis(50px, 2);
     }

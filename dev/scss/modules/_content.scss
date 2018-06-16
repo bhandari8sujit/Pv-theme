@@ -5,12 +5,12 @@
         @include font-size(3.6);
         font-weight: 400;
         line-height: 42px;
-        margin-top: 90px;
+        //margin-top: 90px;
         margin-bottom: 40px;    
        
         @include respond(phone){
             @include font-size(2.6);
-            margin-top: 45px;
+           // margin-top: 45px;
             margin-bottom: 20px;
         }
         .cnt-title-main{
@@ -21,15 +21,16 @@
     }
 
     & .content-body{
-        margin: 98px 220px;
+        margin: 0px 220px;
         @include respond(tab-port){
-            margin: 98px 40px;
+            margin: 0px 40px;
         }
 
         @include respond(phone){
-            margin: 98px 20px;
+            margin: 0px 20px;
         }
-       & .content-body_desc{
+
+       &_desc{
         //color: #000000;
         //font-family: Lato;
         font-size: 18px;
@@ -51,6 +52,7 @@
     .m-b-90{
         position: relative;
     }
+
     .gallery-thumbs{
         filter: brightness(50%);
         list-style-type: none;
@@ -87,6 +89,19 @@
     }
 
 }
-#theme-news{
-    background:#f4f4f4;
-}   
+
+.theme-section{
+    padding: 100px 0px;
+
+    &--bg{
+        background:#f4f4f4;
+    }
+
+    @include respond(phone){
+        padding: 50px 0px;
+    }
+}
+
+.theme-main--content {
+    border-width: 1px;
+}

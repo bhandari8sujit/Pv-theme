@@ -1,65 +1,42 @@
-#theme-404-page{
-    //.wrapper{
-    //    display: table;
-    //    
-    //    & .items{
-    //        padding: 250px 0px;
-    //        display: table-cell;
-    //        vertical-align:middle;
-//
-    //        span{
-    //            font-size: 144px;
-    //            line-height: 181px;
-    //            font-family: Merriweather;
-    //            color: #000;
-    //            
-    //        }
-    //        p{
-    //            font-size: 20px;
-    //            line-height: 40px;
-//
-    //        }
-    //    }
-    //}
-    .errorWrap{
-        
-        & .errorWrap--head {
-            margin-bottom: 10px;
-          //  color:#000;
 
-            & .big {
-                font-family: Merriweather;
-                font-size: 150px;
-                margin-right: 10px;
+.errorWrap{
+    
+    & .errorWrap--head {
+        margin-bottom: 10px;
+        //  color:#000;
 
-                @include respond (phone){
-                    font-size: 75px;
-                }
+        & .big {
+            font-family: Merriweather;
+            font-size: 150px;
+            margin-right: 10px;
 
+            @include respond (phone){
+                font-size: 75px;
             }
-            & .small{
-                font-size: 40px;
 
-                @include respond (phone){
-                    font-size: 20px;
-                }
-
-            }
         }
+        & .small{
+            font-size: 40px;
 
-        & .errorWrap--info{
-            & .title{
+            @include respond (phone){
                 font-size: 20px;
-                margin-bottom: 40px;
-                display: block;
-                text-transform: none;
-
-                @include respond (phone){
-                    font-size: 15px;
-                }
             }
+
         }
     }
 
-    
+    & .errorWrap--info{
+        & .title{
+            font-size: 20px;
+            margin-bottom: 40px;
+            display: block;
+            text-transform: none;
+
+            @include respond (phone){
+                font-size: 15px;
+            }
+        }
+    }
 }
+
+

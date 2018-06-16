@@ -1,18 +1,99 @@
-#myCarousel{
-    @include fill;
+//#myCarousel{
+//    @include fill;
+//
+//    & .carousel-inner {
+//        @include fill;
+//
+//        & .item{
+//            @include fill;
+//
+//            & .inner-img{
+//                background-repeat:no-repeat;
+//                background-position: center;
+//                background-size: cover;
+//                height: 100%;               
+//            }
+//        }
+//    }
+//}
 
-    & .carousel-inner {
-        @include fill;
+.theme-carousel {
+    width: 100%;
+    //height: calc(100% - 106px);
+    //padding-bottom: 30px;
+    position: relative;
+    
+    &__indicators {
+        li {
+            width: 18px;
+            height: 18px;
+            margin: 2px 5px;
+            text-indent: -9999px;
+            transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
 
-        & .item{
-            @include fill;
-
-            & .inner-img{
-                background-repeat:no-repeat;
-                background-position: center;
-                background-size: cover;
-                height: 100%;               
+            &.active {
+                width: 20px;
+                height: 20px;
+                margin: 1px 5px;
             }
+        }
+    }
+    &__carousel-inner {
+        width: 100%;
+        height: 100%;
+        //padding-bottom: 30px;
+        >.item {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            &:after {
+                content: '';
+                background-color: rgba(0, 0, 0, .1);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+        }
+    }
+    &__carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        z-index: 4;
+        text-align: center;
+        padding: 0 150px;
+    }
+    &__control {
+        width: 100%;
+        position: absolute;
+        z-index: 4;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        
+        .carousel-control {
+            background-image: none;
+            width: auto;
+            text-shadow: 0 0 0;
+            transition: all .5s ease;
+            font-size: 5rem;
+        }
+        .left {
+            left: 30px;
+        }
+        .right {
+            right: 30px;
         }
     }
 }
@@ -33,26 +114,83 @@
                 font-size: 24px;
 
             }
-            .pvi-right, .pvi-left{
-                color:#b1b1b1;
-            }
+            //.pvi-right, .pvi-left{
+            //    color:#b1b1b1;
+            //}
         }
     }
 }
 
-.owl-2 {  
-    width: 128%;
-  //  transform: translateX(-22%) !important;
-    @include vendor-prefix(transform,translateX(-25%));
+//.owl-2 {  
+//    width: 128%;
+//  //  transform: translateX(-22%) !important;
+//    @include vendor-prefix(transform,translateX(-25%));
+//
+//    @include respond(phone){
+//        width: 100%;
+//        //  transform: translateX(-22%) !important;
+//          @include vendor-prefix(transform,translateX(0%));
+//    }
+//    @include respond(tab-port){
+//        width: 100%;
+//        //  transform: translateX(-22%) !important;
+//          @include vendor-prefix(transform,translateX(0%));
+//    }
+//}
+//
+.theme-owl-carousel {
+    margin-bottom: 40px;
+    margin-right: 5%;
 
     @include respond(phone){
-        width: 100%;
-        //  transform: translateX(-22%) !important;
-          @include vendor-prefix(transform,translateX(0%));
+        margin-right: 2%;
     }
-    @include respond(tab-port){
-        width: 100%;
-        //  transform: translateX(-22%) !important;
-          @include vendor-prefix(transform,translateX(0%));
+
+}
+.owl-carousel {
+    // position: relative;
+    // width: 200%;
+    // float: right;
+    margin-bottom: 40px;
+    
+   // @media(max-width: $screen-xs-max) {
+   //     margin-left: 5%;
+   // }
+
+    .owl-nav {
+        width: 70px;
+        height: 45px;
+        overflow: hidden;
+        float: right;
+        margin-top: 10px;
+
+        .owl-prev,
+        .owl-next {
+            width: 35px;
+            height: 45px;
+            position: relative;
+            text-indent: -9999px;
+            float: left;
+            @include transition(all, .5s, ease);
+            &:after {
+                @include pv-theme-pseudo;
+                text-indent: 0;
+                top: 0;
+                @include font-size(3);
+            }
+        }
+        .owl-prev {
+            &:after {
+                content: '\e918';
+                left: 0;
+            }
+        }
+        .owl-next {
+            &:after {
+                content: '\e917';
+                right: 0;
+            }
+        }
     }
+ 
 }

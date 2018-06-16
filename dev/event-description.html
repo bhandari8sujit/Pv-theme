@@ -9,7 +9,7 @@
     <title>Imagine Creations</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/dark.min.css">
+    <link rel="stylesheet" href="css/light.min.css">
     <link rel="stylesheet" href="css/font-default.min.css">
     <link rel="stylesheet" href="css/color-default.min.css">
     <!--[if lt IE 9]>
@@ -19,15 +19,18 @@
 </head>
 
 <body>
+
+<div class="theme-wrap">
 @@include('includes/header.html')
-<div class="wrap-main">
-<section id="theme-events-page">
+
+<main class="theme-main theme-main--content">
+<section class="theme-section">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="content">    
                 <div class="container">        
                     <div class="cnt-title cnt-title-about">
-                        <h2>Events</h2>
+                        <h3>Events</h3>
                     </div>
                     <hr class="content-hr m-b-50">
 
@@ -45,13 +48,13 @@
                         <div class="col-md-12">            
                             <div class="event-desc text-left col-md-offset-3 col-sm-offset-2"> 
                                 <h6>Jul 24, 2023 | San Fransisco</h6>
-                                <h3>From the Light - Wolfgang Ines</h3>
+                                <h4>From the Light - Wolfgang Ines</h4>
                                 <button class= "btn btn-dark btn-rsvp m-t-20 m-b-60">RSVP</button>
                                               
                             </div>
-                            <div class="event-desc-img m-b-30" style="background-image: url(images/001.jpg)">
-                            
-                            </div>
+                            <figure class="event-desc-img m-b-30">
+                                <img src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/087740500-15208499591865810307039261.jpg" alt="" class="img-responsive">
+                            </figure>
                         </div>
 
                         <div class="col-md-6 col-sm-12">
@@ -76,7 +79,7 @@
                                 
                                 Fusce vulputate libero vel ex porttitor, ac euismod eros cursus. Etiam et lorem ut arcu rhoncus efficitur vitae egestas augue. Nam enim tellus, sodales in libero a, finibus varius arcu. Praesent imperdiet velit arcu, non interdum metus accumsan in. Curabitur ultrices, dui vel placerat mollis, dolor odio auctor quam, vel imperdiet odio lacus ac neque. Sed pharetra hendrerit mauris eget ultricies. Fusce vulputate iaculis vehicula. Pellentesque in mollis est. Sed a nulla ac arcu malesuada scelerisque.
                             </div>
-                            <button class= "btn btn-dark btn-rsvp m-t-20 m-b-60">RSVP</button>
+                            <button class= "btn btn-dark btn-rsvp m-t-20">RSVP</button>
                         </div>
                     </div>  
 
@@ -85,6 +88,7 @@
         </div>
     </div>
 </section>
+</main>
 </div>
 @@include('includes/footer.html')
 

@@ -10,7 +10,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/dark.min.css">  
+    <link rel="stylesheet" href="css/light.min.css">  
     <link rel="stylesheet" href="css/font-default.min.css">
     <link rel="stylesheet" href="css/color-default.min.css">
     <!--[if lt IE 9]>
@@ -21,24 +21,47 @@
 
 <body>
 
-@@include('includes/header.html')
-<div class="wrap-main">
-<section id="theme-banner">
-    <div class="theme-banner-img_wrap">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner overlay">
-                <div class="item active">
-                    <div class="inner-img" style="background-image: url(images/002.jpg)"></div>                                        
-                </div>
-                <div class="item">
-                    <div class="inner-img" style="background-image: url(images/001.jpg)"></div>                                               
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<main class="theme-wrap">
+    @@include('includes/header.html')
+    <section class="theme-banner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div id="theme-carousel" class="carousel theme-carousel slide" data-ride="carousel">
+                                <div class="carousel-inner theme-carousel__carousel-inner">
+                                    <div class="item active">
+                                        <img src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/users/005085700-1491380175_5760x3840.jpeg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/users/041790700-1490850579_3000x2000.jpeg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/060000000-15129707641905242583096033.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/055611100-15129707621864128177207474.jpg" alt="">
+                                    </div>
 
-<section id="theme-description">
+                                    <div class="theme-banner-info text-center">
+                                        Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore unde omnis iste natus error sit veri<br>
+                                        <button class="btn btn-light m-t-20 m-b-10 btn-gallery-page">CTA Button</button>
+                                    </div>
+                                </div>
+                                <div class="theme-carousel__control">
+                                    <a class="left carousel-control" href="#theme-carousel" data-slide="prev">
+                                        <i class="pvi-thin-left"></i>
+                                    </a>
+                                    <a class="right carousel-control" href="#theme-carousel" data-slide="next">
+                                        <i class="pvi-thin-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <section class="theme-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -51,98 +74,117 @@
             </div>
         </div>
     </div>
-</section>
+    </section>
 
-<section id="theme-news">
-    <div class="container-fluid">
-        <div class="row text-center">
-            <div class="content">
-                <div class="cnt-title">
-                    <h2 class="cnt-title-main">News</h2>
-                </div>
-                <div class="container">
-                    <div class="row p-b-90">
-                    <div class="owl-carousel owl-2">
-                        <div class="div">
-                            <div class="card">
-
-                                <div class="card-img" style="background-image: url(images/003.jpg);">
-                                </div>
-                                
-                                <div class="card-content">
-                                    <p class="date m-b-15">AUG 19</p>
-                                    <p class="title m-b-15">News 1</p>
-                                    <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-                                    <a href="#" class="title">READ MORE&nbsp;&nbsp;<i class="pvi-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="card">
-                                <div class="card-img" style="background-image: url(images/004.jpg);">
-                                </div>
-                                
-                                <div class="card-content">
-                                    <p class="date m-b-15">AUG 19</p>
-                                    <p class="title m-b-15">News 1</p>
-                                    <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-                                    <a href="#" class="title">READ MORE&nbsp;&nbsp;<i class="pvi-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="card">
-                                <div class="card-img" style="background-image: url(images/no-img.png);">
-                                </div>
-                                
-                                <div class="card-content">
-                                    <p class="date m-b-15">AUG 19</p>
-                                    <p class="title m-b-15">News 1</p>
-                                    <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-                                    <a href="#" class="title">READ MORE&nbsp;&nbsp;<i class="pvi-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="card">
-                                <div class="card-img" style="background-image: url(images/003.jpg);">
-                                </div>
-                                
-                                <div class="card-content">
-                                    <p class="date m-b-15">AUG 19</p>
-                                    <p class="title m-b-15">News 1</p>
-                                    <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-                                    <a href="#" class="title">READ MORE&nbsp;&nbsp;<i class="pvi-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="card">
-                                <div class="card-img" style="background-image: url(images/005.jpg);">
-                                </div>
-                                
-                                <div class="card-content">
-                                    <p class="date m-b-15">AUG 19</p>
-                                    <p class="title m-b-15">News 1</p>
-                                    <p class="desc m-b-15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-                                    <a href="#" class="title">READ MORE&nbsp;&nbsp;<i class="pvi-arrow-right"></i></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>                        
-                    </div>
-                </div>
-            </div>
+    <section class="theme-section theme-section--bg text-center">
+    <div class="content">
+        <div class="cnt-title">
+            <h2 class="cnt-title-main">News</h2>
         </div>
     </div>
-</section>
+    <div class="theme-owl-carousel">
+    <div class="owl-carousel owl-2">
+        <div class="card card--light">
+                <figure class="card-img embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item" src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/058243500-1506919674pixabay-bb483bce962d44435e.jpg"
+                        alt="Title Here">
+                </figure>
+                <div class="card-content">
+                    <h6 class="m-b-15">Mar 2, 2017</h6>
+                    <p class="m-b-10"><b>News 1</b></p>
+                    <p class="truncate truncate--2-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam inventore consequuntur,
+                        nesciunt maxime dolorem modi itaque! Provident, molestiae.</p>
+                    <span class="text-right box-block m-t-15">
+                        <a class="text-uppercase">Read More <i class="pvi-arrow-right"></i></a>
+                    </span>
+                </div>
+        </div>
+    
+        <div class="card card--light">
+                <figure class="card-img embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item" src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/058243500-1506919674pixabay-bb483bce962d44435e.jpg"
+                        alt="Title Here">
+                </figure>
+                <div class="card-content">
+                    <h6 class="m-b-15">Mar 2, 2017</h6>
+                    <p class="m-b-10"><b>News 1</b></p>
+                    <p class="truncate truncate--2-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam inventore consequuntur,
+                        nesciunt maxime dolorem modi itaque! Provident, molestiae.</p>
+                    <span class="text-right box-block m-t-15">
+                        <a class=" text-uppercase">Read More <i class="pvi-arrow-right"></i></a>
+                    </span>
+                </div>
+        </div>
+    
+        <div class="card card--light">
+                <figure class="card-img embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item" src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/058243500-1506919674pixabay-bb483bce962d44435e.jpg"
+                        alt="Title Here">
+                </figure>
+                <div class="card-content">
+                    <h6 class="m-b-15">Mar 2, 2017</h6>
+                    <p class="m-b-10"><b>News 1</b></p>
+                    <p class="truncate truncate--2-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam inventore consequuntur,
+                        nesciunt maxime dolorem modi itaque! Provident, molestiae.</p>
+                    <span class="text-right box-block m-t-15">
+                        <a class="text-uppercase">Read More <i class="pvi-arrow-right"></i></a>
+                    </span>
+                </div>
+        </div>
+    
+        <div class="card card--light">
+                <figure class="card-img embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item" src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/058243500-1506919674pixabay-bb483bce962d44435e.jpg"
+                        alt="Title Here">
+                </figure>
+                <div class="card-content">
+                    <h6 class="m-b-15">Mar 2, 2017</h6>
+                    <p class="m-b-10"><b>News 1</b></p>
+                    <p class="truncate truncate--2-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam inventore consequuntur,
+                        nesciunt maxime dolorem modi itaque! Provident, molestiae.</p>
+                    <span class="text-right box-block m-t-15">
+                        <a class=" text-uppercase">Read More <i class="pvi-arrow-right"></i></a>
+                    </span>
+                </div>
+        </div>
+        
+        <div class="card card--light">
+                <figure class="card-img embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item" src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/058243500-1506919674pixabay-bb483bce962d44435e.jpg"
+                        alt="Title Here">
+                </figure>
+                <div class="card-content">
+                    <h6 class="m-b-15">Mar 2, 2017</h6>
+                    <p class="m-b-10"><b>News 1</b></p>
+                    <p class="truncate truncate--2-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam inventore consequuntur,
+                        nesciunt maxime dolorem modi itaque! Provident, molestiae.</p>
+                    <span class="text-right box-block m-t-15">
+                        <a class="text-uppercase">Read More <i class="pvi-arrow-right"></i></a>
+                    </span>
+                </div>
+        </div>
+        
+        <div class="card card--light">
+                    <figure class="card-img embed-responsive embed-responsive-16by9">
+                        <img class="embed-responsive-item" src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/058243500-1506919674pixabay-bb483bce962d44435e.jpg"
+                            alt="Title Here">
+                    </figure>
+                    <div class="card-content">
+                        <h6 class="m-b-15">Mar 2, 2017</h6>
+                        <p class="m-b-10"><b>News 1</b></p>
+                        <p class="truncate truncate--2-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam inventore consequuntur,
+                            nesciunt maxime dolorem modi itaque! Provident, molestiae.</p>
+                        <span class="text-right box-block m-t-15">
+                            <a class="text-uppercase">Read More <i class="pvi-arrow-right"></i></a>
+                        </span>
+                    </div>
+        </div>
 
-<section id="theme-gallery">
+    </div>
+    </div>
+    </section>
+
+    <section class="theme-section p-b-clear">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="content">
@@ -150,57 +192,69 @@
                     <h2 class="cnt-title-main">Gallery</h2>
                 </div>
                 <div class="container">
-                    <div class="row m-b-90">
-                        <button class="btn btn-light btn-gallery">More Galleries</button>
-
-                    <ul class="gallery-thumbs">
-                        <li>
-                            <img style="background:url('images/004.jpg')">
-                        </li>
-                        <li class="hidden-xs">
-                            <img style="background:url('images/005.jpg')">
-                        </li>
-                        <li class="hidden-xs">
-                            <img style="background:url('images/006.jpg')">
-                        </li>
-                        <li class="hidden-xs hidden-sm hidden-md">
-                            <img style="background:url('images/007.jpg')">
-                        </li>
-                        <li class="hidden-xs hidden-sm hidden-md">
-                            <img style="background:url('images/003.jpg')">
-                        </li>
-                        <li class="hidden-xs hidden-sm hidden-md">
-                            <img style="background:url('images/002.jpg')">
-                        </li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="theme-gallery-home text-center">
+                                <a href="javascript:;" class="btn btn-light btn-gallery btn-gallery-home-more ">More Galleries</a>
+                                <ul class="list-unstyled theme-gallery-home__list">
+                                    <li>
+                                            <figure class="card__img embed-responsive embed-responsive-4by3">
+                                                <img class="embed-responsive-item" src="images/002.jpg" alt="Title Here">
+                                            </figure>
+                                    </li>
+                                    <li>
+                                            <figure class="card__img embed-responsive embed-responsive-4by3">
+                                                <img class="embed-responsive-item" src="images/003.jpg" alt="Title Here">
+                                            </figure>
+                                    </li>
+                                    <li>
+                                            <figure class="card__img embed-responsive embed-responsive-4by3">
+                                                <img class="embed-responsive-item" src="images/004.jpg" alt="Title Here">
+                                            </figure>
+                                    </li>
+                                    <li>
+                                            <figure class="card__img embed-responsive embed-responsive-4by3">
+                                                <img class="embed-responsive-item" src="images/005.jpg" alt="Title Here">
+                                            </figure>
+                                    </li>
+                                    <li>
+                                            <figure class="card__img embed-responsive embed-responsive-4by3">
+                                                <img class="embed-responsive-item" src="images/006.jpg" alt="Title Here">
+                                            </figure>
+                                        </div>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>     
             </div>
         </div>
     </div>
-</section>
+    </section>
 
-<section id="theme-reviews">
+    <section class="theme-section">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
                 <div class="content">
-                    <div class="cnt-title m-t-0">
+                    <div class="cnt-title">
                             <h2 class="cnt-title-main">Reviews and Ratings</h2>
                     </div>
                     <div class="content-body m-b-100">
-                        <div style="height:372px">
-                            
-                        </div>
+                        
+                        
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+    </section>
+
+</main>
 </div>
 @@include('includes/footer.html')
-
+<script src="./scripts/main.min.js"></script>
 </body>
-    <script src="./scripts/main.min.js"></script>
+    
 </html>

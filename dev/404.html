@@ -16,12 +16,19 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script> -->
+      
 </head>
 
 <body>
-@@include('includes/header.html')
-<div class="wrap-main"></div>
-<section id="theme-404-page">
+<div class="theme-wrap">
+    @@include('includes/header.html')
+
+    <main class="theme-main theme-main--content">
+    <section class="theme-section">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="content">    
@@ -53,10 +60,12 @@
             </div>
         </div>
     </div>
-    <div id="push"></div>
+    
 </section>
+</main>
+<div id="push"></div>
 </div>
 @@include('includes/footer.html')
-
+<script src="scripts/main.min.js"></script>
 </body>
 </html>

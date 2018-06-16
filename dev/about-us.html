@@ -9,7 +9,7 @@
     <title>Imagine Creations</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/dark.min.css">
+    <link rel="stylesheet" href="css/light.min.css">
     <link rel="stylesheet" href="css/font-default.min.css">
     <link rel="stylesheet" href="css/color-default.min.css">
     <!--[if lt IE 9]>
@@ -19,23 +19,26 @@
 </head>
 
 <body>
+
+<div class="theme-wrap">
 @@include('includes/header.html')
-<div class="wrap-main">
-<section id="theme-about-page">
+
+<main class="theme-main theme-main--content">
+<section class="theme-section">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="content">    
-                <hr class="content-hr">
+                
                 <div class="container">        
                     <div class="cnt-title cnt-title-about">
-                        <h2 class="cnt-title-main">About Us</h2>
+                        <h3 class="cnt-title-main">About Us</h3>
                     </div>
                     <hr class="content-hr m-b-50">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="content-about-img m-b-20" style="background:url('./images/001.jpg')">
-
-                            </div>
+                            <figure class="content-about-img m-b-20">
+                                <img src="https://pagevamp-uploads.s3.amazonaws.com/1817612721859020/087740500-15208499591865810307039261.jpg" alt="" class="img-responsive">
+                            </figure>
                         </div>
                     </div>
                     <div class="row m-b-5">
@@ -68,7 +71,7 @@
                             </dl> 
                         </div>
                     </div>
-                    <div class="row m-b-100">
+                    <div class="row">
                         <div class="col-lg-12 text-left">
                             <table>
                                 <tr>
@@ -88,6 +91,7 @@
         </div>
     </div>
 </section>
+</main>
 </div>
 @@include('includes/footer.html')
 

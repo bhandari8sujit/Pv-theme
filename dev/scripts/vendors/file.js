@@ -9,7 +9,7 @@ $(document).ready(function(){
                 items:1,
                 nav:true
             },
-            550:{
+            600:{
                 items:2,
                 nav:true
             },
@@ -28,7 +28,7 @@ $(document).ready(function(){
                 loop:false
             },
             1800:{
-                items:4,
+                items:5,
                 nav:true,
                 loop:false
             }
@@ -40,5 +40,6 @@ $(document).ready(function(){
    //     // options
    //     itemSelector: '.review-wrap__review'
    // });
+
 
 });

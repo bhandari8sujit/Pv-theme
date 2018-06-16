@@ -1,14 +1,6 @@
-#theme-gallery-page{
-
-    .nav{
-        li{
-            a{
-                display: inline;
-            }
-        }
-    }
 
     .gallery-thumb{
+        width: 100%;
         position: relative;
         overflow:hidden;
 
@@ -197,6 +189,194 @@
             //   filter: brightness(30%);                              
             //}
             */
+        }
+    }
+
+
+.theme-gallery-home {
+    position: relative;
+    &__list {
+        overflow: hidden;
+        white-space: nowrap;
+        @include font-size(0);
+        position: relative;
+        @include transition(all, .5s, ease);
+        margin-bottom: 0;
+        >li {
+            width: 20%;
+            display: inline-block;
+            vertical-align: top;
+            @include font-size(1.6);
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: -4px;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:nth-child(5) {
+                padding-right: 0;
+            }
+            @media(min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                width: 25%;
+                &:nth-child(4) {
+                    padding-right: 0;
+                }
+            }
+            @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                width: 33.333333%;
+                &:nth-child(3) {
+                    padding-right: 0;
+                }
+            }
+            @media(max-width: $screen-xs-max) {
+                width: 50%;
+                &:nth-child(2) {
+                    padding-right: 0;
+                }
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+    .btn-gallery-home-more {
+        @include centerer(true, true);
+        z-index: 10;
+        padding-top: 8px;
+    }
+}
+
+// .gallery-wrap {
+    // padding: 30px;
+    // @include breakpoint(md) {
+    //   padding: 30px 0;
+    // }
+    // @include breakpoint(sm) {
+    //   padding: 30px 0;
+    // }
+    // @include breakpoint(xs) {
+    //   padding: 15px 0;
+    // }
+// }
+  
+@mixin breakpoint($point) {
+    @if $point == xs {
+      @media (max-width: 767px) {
+        @content;
+      }
+    } @else if $point == sm {
+      @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+      }
+    } @else if $point == md {
+      @media (min-width: 768px) and (max-width: 1199px) {
+        @content;
+      }
+    } @else if $point == lg {
+      @media (max-width: 1440px) {
+        @content;
+      }
+    } @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+  }
+
+.gallery-wrap{
+    .album {
+        width: 100%;
+        position: relative;
+        margin-bottom: 80px;
+        overflow: hidden;
+        @include respond(tab-port) {
+            margin-bottom: 50px;
+        }
+        @include respond(phone) {
+            margin-bottom: 30px;
+        }
+        &-cover {
+            width: 850px;
+            &__img {
+                background-image: url('https://images.unsplash.com/photo-1508257082719-44cae0c0044d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd74b95345752ad2eb4edc52867a2d62&auto=format&fit=crop&w=1950&q=80');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            @include respond(tab-land) {
+                width: 650px;
+            }
+            @include respond(tab-port) {
+                width: 500px;
+            }
+            @include respond(phone) {
+                width: 100%;
+            }
+        }
+        &-desc {
+            width: 500px;
+            background-color: #000;
+            color: #fff;
+            padding: 50px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @include respond(tab-port) {
+                width: 400px;
+                padding: 30px;
+                
+            }
+
+            @include respond(phone) {
+                background: rgba(0, 0, 0, .5);
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                top: 0;
+                transform: translateY(0);
+            }
+            
+            &__info {
+                @include respond(phone) {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &--left {
+            .album-cover {
+                float: left;
+            }
+            .album-desc {
+                right: 0;
+                @include respond(phone) {
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
+        &--right {
+            .album-cover {
+                float: right;
+            }
+            .album-desc {
+                left: 0;
+                @include respond(phone) {
+                    right: 0;
+                    left: auto;
+                }
+            }
+        }
+        .embed-responsive-16by9 {
+            padding-bottom: 40%;
+            @include respond(phone) {
+                padding-bottom: 56.25%;
+            }
         }
     }
 }

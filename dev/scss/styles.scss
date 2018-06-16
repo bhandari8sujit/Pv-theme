@@ -1,19 +1,19 @@
-@import 'vendors/bootstrap/bootstrap',
-        'vendors/pvt-icons/pvt-icons';
+ @import 'vendors/bootstrap/bootstrap',
+         'vendors/pvt-icons/pvt-icons';
 
-@import "utilities/path",
-        "utilities/functions",
-        "utilities/vars",
-        "utilities/mixins",
-        "utilities/placeholders",
-        "utilities/gutter",
-        "utilities/helper",
-        "utilities/responsive";
+ @import "utilities/path",
+         "utilities/functions",
+         "utilities/vars",
+         "utilities/mixins",
+         "utilities/placeholders",
+         "utilities/gutter",
+         "utilities/helper",
+         "utilities/responsive";
 
-@import "base/config",
-        "base/units",
-        "base/typo",
-        "base/branding";
+ @import "base/config",
+         "base/units",
+         "base/typo",
+         "base/branding";
 
 @import 'modules/button',
         'modules/alert',

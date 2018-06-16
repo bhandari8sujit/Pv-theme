@@ -9,20 +9,20 @@ body {
 //    color: $color-white;
 //}
 
-.content{
-    //.cnt-title{  
-    //    .cnt-title-main{
-    //        color: $color-white;                
-    //    }     
-    //    
-    //}
-
-    //.content-body{
-    //    .content-body_desc{
-    //        color: $color-white;
-    //    }
-    //}
-}
+//.content{
+//    //.cnt-title{  
+//    //    .cnt-title-main{
+//    //        color: $color-white;                
+//    //    }     
+//    //    
+//    //}
+//
+//    //.content-body{
+//    //    .content-body_desc{
+//    //        color: $color-white;
+//    //    }
+//    //}
+//}
 
 .card{    
     background: $color-base;    
@@ -36,10 +36,16 @@ body {
     //            color:$color-white;
     //        }
     //    }
-    //}
+}
+.theme-main--content {
+    border-top: 1px solid #777;
 }
 
-#theme-news{
+.content-hr{
+    border-top: 1px solid #777;
+}
+
+.theme-section--bg{
     background: $color-black;
 }
 
@@ -116,7 +122,7 @@ body {
     }
         
 }
-#theme-gallery-page{
+.theme-section{
 
     //.social{
     //    a{
@@ -124,12 +130,6 @@ body {
     //    }
     //}
 
-    .events-list{
-        a{                
-            background: none;        
-        }
-      
-    }
     //.events-list{
     //    a{
     //        color: $color-anchor;    
@@ -159,13 +159,13 @@ body {
 
 }
 
-#theme-events-page{
+
     .card{    
-        background: $color-black;
+        background: $color-base;
         margin-bottom: 30px;  
     
         .card-content{
-            background: $color-black;    
+            background: $color-base;    
             //a{
             //    color: $color-white;
     //
@@ -175,6 +175,14 @@ body {
             //    }
             //}
         }
+        &--black__dark{
+            background: $color-black;
+
+            .card-content{
+                background: $color-black;    
+            }
+        }
+    
     }
 
     //.btn-dark{    
@@ -187,19 +195,20 @@ body {
     //    }
     //}
 
-    .events-list{
+.events-list{
+    li{
         a{                
             background: none;        
         }
-      
     }
+}
 
     //.social{
     //    a{
     //        color:$color-anchor;
     //    }
     //}
-}
+
 
 //#theme-contact-page{
 //    .btn-dark{
@@ -212,3 +221,20 @@ body {
 //        }
 //    }  
 //}
+
+.theme-section {
+    .events-list {
+        li {
+            a{
+                color: $color-anchor;
+                background: none;
+            }
+        }
+        .active{
+            a{
+                color: $color-white !important;
+                border-bottom: 2px solid !important;
+            }            
+        }
+    }
+}

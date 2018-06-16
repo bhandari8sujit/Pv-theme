@@ -61,11 +61,18 @@ gulp.task('htmlmin', function() {
 });
 
 
-// Compile Scripts and after minimizing auto-inject into browsers
+//Compile Scripts and after minimizing auto-inject into browsers
 gulp.task('scripts', function() {
-    return gulp.src('dev/scripts/**/*.js')
-        .pipe(plumber())
-        .pipe(strip())
+    return gulp.src([
+        'dev/scripts/vendors/ajquery.min.js',
+        'dev/scripts/vendors/bootstrap.min.js',
+        'dev/scripts/vendors/owl.carousel.min.js',
+        'dev/scripts/vendors/file.js',
+        'dev/scripts/vendors/isotope.js',
+        'dev/scripts/scripts.js'
+    ])
+        // .pipe(plumber())
+        // .pipe(strip())
         // .pipe(jshint('.jshintrc'))
         // .pipe(jshint.reporter('default'))
         .pipe(concat('main.js'))
@@ -112,16 +119,16 @@ gulp.task('styleguide:applystyles', function() {
         .pipe(gulp.dest(outputPath))
 });
 
-// Static Server with files compress with Styleguide
-gulp.task('serve', ['sass', 'htmlmin', 'styleguide'], function() {
-    bs.init({
-        server: "dist/"
-    });
-    gulp.watch("dev/scss/**/*.scss", ['sass', 'styleguide']).on('change', bs.reload);
-    gulp.watch("dev/images/**/*", ['images']).on('change', bs.reload);
-    gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
-    gulp.watch("dev/**/*.html", ['htmlmin']).on('change', bs.reload);
-});
+ // Static Server with files compress with Styleguide
+ gulp.task('serve', ['sass', 'htmlmin', 'styleguide'], function() {
+     bs.init({
+         server: "dist/"
+     });
+     gulp.watch("dev/scss/**/*.scss", ['sass', 'styleguide']).on('change', bs.reload);
+     gulp.watch("dev/images/**/*", ['images']).on('change', bs.reload);
+     gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
+     gulp.watch("dev/**/*.html", ['htmlmin']).on('change', bs.reload);
+ });
 
 // Static Server with files compress without Styleguide
 gulp.task('serve-w-s', ['sass', 'htmlmin'], function() {
@@ -130,16 +137,16 @@ gulp.task('serve-w-s', ['sass', 'htmlmin'], function() {
     });
     gulp.watch("dev/scss/**/*.scss", ['sass']).on('change', bs.reload);
     gulp.watch("dev/images/**/*", ['images']).on('change', bs.reload);
-    gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
+   // gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
     gulp.watch("dev/**/*.html", ['htmlmin']).on('change', bs.reload);
 });
 
 
-gulp.task('webstandards', function() {
-    return gulp.src('dist/**/*')
-        .pipe(webstandards());
-});
+// gulp.task('webstandards', function() {
+//     return gulp.src('dist/**/*')
+//         .pipe(webstandards());
+// });
 
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
-gulp.task('servews', ['serve-w-s', 'fonts']);
+gulp.task('servews', ['serve-w-s', 'fonts', 'scripts']);
 gulp.task('default', ['serve', 'styleguide', 'fonts']);
