@@ -5,7 +5,7 @@
 .theme-banner{
     padding: 0px 15px 30px 15px;
 //    max-width: 100%;
-//height: calc(100vh - 106px);    
+//    height: calc(100vh - 106px);    
 //    display: block;
 //    margin-bottom: -28px;
 //    position: relative;
@@ -32,6 +32,7 @@
         color: #fff;
         font-size:22px;
         line-height: 28px;
+        z-index: 10;
 
         @include respond (phone){            
             width: 95%;

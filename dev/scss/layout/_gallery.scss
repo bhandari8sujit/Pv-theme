@@ -263,28 +263,7 @@
     //   padding: 15px 0;
     // }
 // }
-  
-@mixin breakpoint($point) {
-    @if $point == xs {
-      @media (max-width: 767px) {
-        @content;
-      }
-    } @else if $point == sm {
-      @media (min-width: 768px) and (max-width: 991px) {
-        @content;
-      }
-    } @else if $point == md {
-      @media (min-width: 768px) and (max-width: 1199px) {
-        @content;
-      }
-    } @else if $point == lg {
-      @media (max-width: 1440px) {
-        @content;
-      }
-    } @else {
-      @warn "Breakpoint mixin supports: xs, sm, md, lg";
-    }
-  }
+
 
 .gallery-wrap{
     .album {
@@ -314,9 +293,17 @@
             }
             @include respond(phone) {
                 width: 100%;
+               
+                &:hover{
+                    .gallery-wrap .album-desc{
+                        display:block;
+                    }
+                }
+                
             }
         }
         &-desc {
+            
             width: 500px;
             background-color: #000;
             color: #fff;
@@ -332,6 +319,7 @@
             }
 
             @include respond(phone) {
+                display: none;
                 background: rgba(0, 0, 0, .5);
                 width: 100%;
                 height: 100%;
@@ -346,6 +334,15 @@
                     top: 50%;
                     transform: translateY(-50%);
                 }
+            }
+            .btn-gallery-page {
+                @include respond(phone){                
+                    width: 100px;
+                    height: 35px;
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding-top: 5px; 
+                }           
             }
         }
         &--left {
