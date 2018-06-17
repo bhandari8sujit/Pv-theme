@@ -1,6 +1,6 @@
-.theme-wrap{
-    margin-top: 106px;
-}
+// .theme-wrap{
+//    margin-top: 106px;
+// }
 
 .theme-banner{
     padding: 0px 15px 30px 15px;
@@ -26,7 +26,7 @@
         width: 70%;
         margin-left: 15%;
        // height: 189px;
-        bottom: 35px;
+        bottom: 40px;
         position: absolute;
         padding: 30px;
         color: #fff;
@@ -37,10 +37,20 @@
         @include respond (phone){            
             width: 95%;
             margin-left: 2.5%;
-            bottom: 35px;            
-            padding: 30px 20px;            
-            font-size: 18px;
+            bottom: 42px;            
+            padding: 20px 10px 10px 10px;      
+            font-size: 16px;
             line-height: 26px
+        }
+
+        .btn-gallery-page {
+            @include respond (phone){            
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+                line-height: 22px;
+                padding-top: 6px;
+            }
         }
     }
 }

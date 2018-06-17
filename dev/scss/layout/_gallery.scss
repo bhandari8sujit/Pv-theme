@@ -248,6 +248,13 @@
         @include centerer(true, true);
         z-index: 10;
         padding-top: 8px;
+
+        @include respond(phone){
+            width: 125px;
+            height: 40px;
+            font-size: 14px;
+            
+        }
     }
 }
 
@@ -271,11 +278,23 @@
         position: relative;
         margin-bottom: 80px;
         overflow: hidden;
+        transition: all .5s ease-in-out;
+
         @include respond(tab-port) {
             margin-bottom: 50px;
         }
+        
         @include respond(phone) {
             margin-bottom: 30px;
+
+            &:hover{
+                
+                .album-desc{
+                    display:block;
+                    transition: all 1s ease-in-out;
+                }
+                
+            }
         }
         &-cover {
             width: 850px;
@@ -293,13 +312,6 @@
             }
             @include respond(phone) {
                 width: 100%;
-               
-                &:hover{
-                    .gallery-wrap .album-desc{
-                        display:block;
-                    }
-                }
-                
             }
         }
         &-desc {
@@ -311,6 +323,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+            transition: all .5s ease-in-out;
 
             @include respond(tab-port) {
                 width: 400px;

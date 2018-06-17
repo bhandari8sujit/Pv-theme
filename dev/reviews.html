@@ -9,7 +9,7 @@
     <title>Imagine Creations</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styles.min.css">
-    <link rel="stylesheet" href="css/dark.min.css">
+    <link rel="stylesheet" href="css/light.min.css">
     <link rel="stylesheet" href="css/font-default.min.css">
     <link rel="stylesheet" href="css/color-default.min.css">
     <!--[if lt IE 9]>
@@ -19,10 +19,11 @@
 </head>
 
 <body>
+<div class="theme-wrap">
 @@include('includes/header.html')
-<div class="wrap-main">
 
-<section id="theme-reviews-page">
+<main class="theme-main theme-main--content">
+<section class="theme-section">
     <div class="container-fluid">
         <div class="row text-center">
             <div class="content">    
@@ -172,13 +173,14 @@
                         </div>
                     </div>
                     <div class="theme-loader m-t-50 m-b-20"></div>
-                    <button class= "btn btn-dark btn-news btn-reviews m-t-20 m-b-100">View more testimonials</button>    
+                    <button class= "btn btn-dark btn-news btn-reviews m-t-20">View more testimonials</button>    
                 </div>
             </div>
         </div>
-    </div>
-   
+    </div>   
 </section>
+</main>
+<div id="push">&nbsp;</div>
 </div>
 
 @@include('includes/footer.html')

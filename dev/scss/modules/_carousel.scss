@@ -19,7 +19,7 @@
 
 .theme-carousel {
     width: 100%;
-    height: calc(100% - 106px);
+    //height: calc(100% - 106px);
     //padding-bottom: 30px;
     position: relative;
     
@@ -46,7 +46,7 @@
     &__carousel-inner {
         width: 100%;
         height: 100%;
-        //padding-bottom: 30px;
+        padding-bottom: 30px;
         >.item {
             width: 100%;
             height: 100%;
@@ -77,10 +77,14 @@
         width: 100%;
         position: absolute;
         z-index: 4;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
+
+        @include respond(phone){
+            display: none;
+        }
         
         .carousel-control {
             background-image: none;

@@ -137,7 +137,7 @@ gulp.task('serve-w-s', ['sass', 'htmlmin'], function() {
     });
     gulp.watch("dev/scss/**/*.scss", ['sass']).on('change', bs.reload);
     gulp.watch("dev/images/**/*", ['images']).on('change', bs.reload);
-   // gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
+    gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
     gulp.watch("dev/**/*.html", ['htmlmin']).on('change', bs.reload);
 });
 
