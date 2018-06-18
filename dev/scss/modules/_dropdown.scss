@@ -1,0 +1,11 @@
+.dropdown-menu {
+    min-width: 10px;
+    @include border-radius(0);
+    padding: 0;
+    >li {
+        >a {
+            padding: 7px 15px;
+            white-space: normal;
+        }
+    }
+}

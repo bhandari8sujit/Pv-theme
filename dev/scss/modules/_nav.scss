@@ -1,0 +1,18 @@
+.nav {
+    &--footer {
+        >ul {
+            >li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .open {
+        >a {
+            background-color: transparent;
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+}

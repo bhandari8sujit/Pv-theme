@@ -61,6 +61,10 @@ h6,
     .footer-title{
         color: $color-brand;
     }
+    .dropdown-menu>li>a:hover {
+        color:$color-white;
+        background: $color-brand;
+    }
 }
 
 
@@ -112,6 +116,7 @@ h6,
 
 .btn:hover{
     background: $color-brand;
+    color: $color-white;
 }
 
 .social{
@@ -132,4 +137,17 @@ h6,
 
 .theme-gallery-home__list:after {
     background-color: rgba(0,0,0,0.5);
+}
+
+.theme-owl-carousel {
+    .owl-nav {
+        button:hover{
+            color: $color-brand;
+        }
+    }
+}
+
+table, th, td {
+    border: 1px solid $color-border;
+    border-collapse: collapse;
 }

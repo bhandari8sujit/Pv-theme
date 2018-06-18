@@ -1,193 +1,31 @@
-.theme-footer {    
-//    background: #000;
-    padding-bottom: 45px;
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
 
-    @include respond(phone){
-        padding-bottom: 20px;
+.theme-footer {
+    padding: 75px 0;
+    &__powered {
+        text-align: right;
+        @media(max-width: $screen-xs-max) {
+            text-align: left;
+            margin-top: 35px;
+        } 
     }
 
-    & .footer-title{
-        padding: 45px 0px 22px 0px;
-        font-family: Merriweather;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 28px;
-        //font-size: 20px;
-        @include font-size(2);
-        text-transform: uppercase;
-    //    color: #525252;
-
-        @include respond(phone){
-            @include font-size(1.8);
-            padding: 30px 0px 15px 0px;
-        }
-    }
-
-    .footer-body-two{
-        display:inline-block;
-
-        & .links1{            
-            display: inline-block;
-
-        @include respond(phone){
-            display: block;
-            margin-bottom: 0px;
-        }
-        }
-
-        & .links2{
-            margin-left: 50px;
-            position: absolute;
-            display: inline-block;
-
-        @include respond(phone){
-            display: block;
-            position: relative;
-            margin-left:0px;
-            margin-bottom: 0px;
-
-        }
-
-        }
-    }
-
-    & .footer-body{
-       // font-family: Lato;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 30px;
-        //font-size: 18px;                    
-        @include font-size(1.8);
-    //    color: #FFFFFF;
-        
-        @include respond(phone){
-            @include font-size(1.6);
-        }
-        & .social-icons{
-            padding-left: 0px;
-
-            @include respond(phone){
-                margin-bottom: 0px;
-            }
-                li{
-                list-style-type: none;
-                display: inline-block;
-                margin-right: 20px;
-                
-            //    a{
-            //        color: #fff;
-            //    }
-
-                i{
-                //    color: #fff;
-                    width: 20px;
-                    height: 17px;
-                }
-            }
-        }
-
-        & ul{
-        //    display: inline-block;
-            list-style-type: none;
-            padding-left: 0px;
-            
-            li{
-                a{
-                 //   font-family: Lato;
-                    font-style: Regular;
-                    @include font-size(1.8);
-                    line-height: 40px;
-                //    color: #fff;
-
-                    @include respond(phone){
-                        @include font-size(1.6);
-                        line-height: 30px;
-                    }
-                }
-            }
-        }
-
-    }
-    @include respond(phone){
-        .p-l-100{
-            padding-left: 15px;
-        }
-        .p-l-0{
-            padding-left: 15px;
-        }
-        .p-l-40{
-            padding-left: 15px;
-        }
-        .p-l-20{
-            padding-left: 15px;
-        }
-    }
-
-    @include respond(tab-port){
-        .p-l-80{
-            padding-left: 15px !important;
-        }
-        .p-l-0{
-            padding-left: 15px;
-        }
-        .p-l-40{
-            padding-left: 15px;
-        }
-        .p-l-20{
-            padding-left: 0px;
-        }
-    }
-    @include respond(tab-land){
-        .p-l-80{
-            padding-left: 40px;
-        }     
-        .p-l-40{
-            padding-left: 15px;
-        }
-        .p-l-20{
-            padding-left: 15px;
-        }
-    }
     input{
-        width:260px;
+        width: 100%;
         height: 45px;
-        padding: 10px;
+        margin-bottom: 10px;
+        padding: 15px 18px;
+        border-radius: 0px;
     }
-    //hr {
-    //    margin-top: 27px;
-    //    margin-bottom: 30px;
-    //    border-top: 1px solid #444;
-    //}
-    .bottom-hr{
-        margin-top: 27px;
-        margin-bottom: 30px;
-    //    border-top: 1px solid #444;
 
-        @include respond(tab-port){
-            margin-top: 60px;
+    .social-icons{
+        li{
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            a{
+                font-size: 2rem;
+            }
         }
-        @include respond(phone){
-            margin-top: 40px;
-        }
-    }
-
-    @include respond(phone){
-    .left{
-        display: block;
-    }
-    .right{
-        float: none !important;
-        display: block;
-        margin-top: 20px;
-
-    }
-    }
-    .pvi-brand{
-        font-size: 25px;
     }
 }
 

@@ -8,13 +8,13 @@
     }
 
     .line::after {
-        content:''; 
-        position: absolute; 
-        top:1%; bottom:-61%; 
-        left:100%;
-        z-index:10; 
-        width:1px; 
-      //  background: #979797;
+    //     content:''; 
+    //     position: absolute; 
+    //     top:1%; bottom:-45%; 
+    //     left:100%;
+    //     z-index:10; 
+    //     width:1px; 
+    //   //  background: #979797;
 
         @include respond(tab-port){
             display: none;
@@ -25,6 +25,7 @@
         position: relative;
             
         i{
+            display: none;
             position: absolute;
             top: -15%;
             right: -1%;
@@ -46,8 +47,8 @@
     .line::after {
         content:''; 
         position: absolute; 
-        top:1%; bottom:-85%; 
-        left:100%;
+        top:1%; bottom:-1%; 
+        left:0%;
         z-index:10; 
         width:1px; 
         background: #777;
@@ -55,9 +56,7 @@
         @include respond(tab-port){
             display: none;
         }
-
     }    
-
     
     ul{
     list-style-type: none;

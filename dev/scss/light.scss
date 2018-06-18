@@ -5,14 +5,15 @@ body {
     color: $color-base;
 }
 
-
-
-.theme-main--content{
-    border-top: 1px solid #eee;
+.theme-main--content {
+    border: 1px solid #eee;
 }
+// .theme-main--content{
+//     border-top: 1px solid #eee;
+// }
 
 .theme-section {
-    .events-list {
+    .theme-tabs__nav{
         li {
             a{
                 color: $color-base;
@@ -25,6 +26,20 @@ body {
             }            
         }
     }
+}
+
+.btn-light{
+    background: #fff;
+    color:#000;    
+}
+.btn-cta{
+    background: #fff;
+    color:#000;
+    border: 1px solid #000;    
+}
+.btn-dark{    
+    background: #000;
+    color:#fff;
 }
 
 .theme-footer{
@@ -76,73 +91,74 @@ body {
     }
 }
 
-#theme-news-page{
-    .social{
-        a{
-            color:$color-base;
-        }
-    }
-    .btn-dark{    
-        background: $color-base;        
-        color: $color-white;
+// #theme-news-page{
+//     .social{
+//         a{
+//             color:$color-base;
+//         }
+//     }
+//     .btn-dark{    
+//         background: $color-base;        
+//         color: $color-white;
 
-        &:hover{        
-            background: $color-black;                        
-        }
-    }
+//         &:hover{        
+//             background: $color-black;                        
+//         }
+//     }
         
-}
+// }
 
-#theme-gallery-page{
+// #theme-gallery-page{
 
-    .social{
-        a{
-            color:$color-base;
-        }
-    }
+//     .social{
+//         a{
+//             color:$color-base;
+//         }
+//     }
 
-    .events-list{
-        a{
-            color: $color-base;            
-        }
-        .active{
-            a{
-                color: $color-black;
-            }
-        }
-    }
+//     .events-list{
+//         a{
+//             color: $color-base;            
+//         }
+//         .active{
+//             a{
+//                 color: $color-black;
+//             }
+//         }
+//     }
 
-    .gallery-thumb-info{
-        background:  #F4F4F4;
+//     .gallery-thumb-info{
+//         background:  #F4F4F4;
 
-        .btn-gallery-page{
-            background: $color-base;
-            color: $color-white;
+//         .btn-gallery-page{
+//             background: $color-base;
+//             color: $color-white;
             
-            &:hover{
-                background: $color-black;                
-            }
-        }
-    }
+//             &:hover{
+//                 background: $color-black;                
+//             }
+//         }
+//     }
     
-    .btn-news{
-        background: $color-base;
-            color: $color-white;
+//     .btn-news{
+//         background: $color-base;
+//             color: $color-white;
             
-        &:hover{
-            background: $color-black;                
-        }
-    }    
+//         &:hover{
+//             background: $color-black;                
+//         }
+//     }    
 
-}
+// }
 
-#theme-contact-page{
-    .btn-dark{
-        background: $color-base;
-            color: $color-white;
+// #theme-contact-page{
+//     .btn-dark{
+//         background: $color-base;
+//             color: $color-white;
             
-        &:hover{
-            background: $color-black;                
-        }
-    }  
-}
+//         &:hover{
+//             background: $color-black;                
+//         }
+//     }  
+// }
+

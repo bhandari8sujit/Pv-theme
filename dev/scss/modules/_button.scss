@@ -1,55 +1,58 @@
 .btn-light{
-    background: #fff;
-    color:#000;
+    //background: #fff;
+    //color:#000;
     border-radius: 0px;
+    padding: 10px 25px;
 }
 
 .btn-dark{
     border-radius: 0;
-    background: #000;
-    color:#fff;
+    padding: 0 25px;
+    //background: #000;
+    //color:#fff;
+
 }
 
 .btn-cta{
-    background: #fff;
-    color:#000;
+    //background: #fff;
+    //color:#000;
     border-radius: 50px 50px 50px 50px;
 }
 
 .event-btn{
-    width: 202px !important;
+    width: auto !important;
 }
 
 .btn-rsvp{
-    width: 100px;
+    width: auto;
     height: 44px;
     font-size: 20px;
-    line-break: 24px;
+    
 }
 
 .btn-news{
-    width: 207px;
+    width: auto;
     height: 44px;
     font-size: 20px;
-    line-break: 24px;
+    
 }
 
 .btn-reviews{
-    width: 258px;
+    width: auto;
 }
 .send-btn{
-    width: 170px;
+    width: auto;
     height: 44px;
     font-size: 20px;
     line-height: 24px;
 }
 .btn-desc{
     margin-top: 26px;
-    width: 160px;
+    width: auto;
     height: 44px;
     padding: 11px 34px;
-    background-color: #fff;
-    border: 1px solid #000;
+    //background-color: #fff;
+    //border: 1px solid #000;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;    
@@ -58,7 +61,7 @@
     @include position(absolute, 50%,null,null,50%);
     @include translate3d(-47.5%, -50%, 0);    
     z-index: 2; 
-    width: 187px;
+    width: auto;
     height: 44px;    
    // font-family: Lato;
     font-size: 20px;
@@ -66,7 +69,7 @@
     line-height: 23px;
 }
 .btn-footer{
-    width: 106px;
+    width: auto;
     height: 37px;
    // font-family: Lato;
     font-size: 14px;
@@ -76,33 +79,35 @@
  
 }
 .btn-header{       
-    width: 115px;
+    width: auto;
     height: 31px;
     padding: 6px 16px 9px 16px;    
-    border: 1px solid #979797;
-    color: #696969;
+    //border: 1px solid #979797;
+    //color: #696969;
    // font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;   
 }
-.btn:hover{
-    background: #7c7c7c;
-    color:#fff;
-}
+//.btn:hover{
+//    //background: #7c7c7c;
+//    //color:#fff;
+//}
+
 .btn-disabled{
     background: #ebebeb;
 }
+
 .btn-gallery-page{
-    width: 160px;
+    width: auto;
     height: 44px;
     font-size: 18px;
     line-height: 22px;
-    padding-top: 9px;
+    
 }
 
 .btn-404{
-    widows: 242px;
+    widows: auto;
     height: 44px;
     font-size: 20px;
     line-height: 24px;
@@ -120,7 +125,7 @@
 }
 
 .btn-send{
-    width: 168px;
+    width: auto;
     height: 44px;
     font-size: 20px;
     line-height: 24px;
