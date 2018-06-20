@@ -3,9 +3,9 @@
     .contact-hr{
         border-top:1px solid;
     }
-    .line{
-        position: relative;
-    }
+    //.line{
+    //    position: relative;
+    //}
 
     .line::after {
     //     content:''; 
@@ -48,7 +48,7 @@
         content:''; 
         position: absolute; 
         top:1%; bottom:-1%; 
-        left:0%;
+        left:0.1%;
         z-index:10; 
         width:1px; 
         background: #777;

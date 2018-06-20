@@ -1563,20 +1563,29 @@ th {
     }
   }
   .line::after {
-    left: 100% !important;
+    left: 99.98% !important;
   }
 }
 .theme-tabs__nav li {
   float: none;
 }
-
-
 .theme-owl-carousel{
   direction: ltr;
 }
 .theme-footer__powered {
   text-align: left !important;
 }
+
+@media (max-width: 992px){
+.content-contact ul li {
+    padding-right: 0 !important;
+  }
+}
+
+.text-left {
+  text-align: right;
+}
+
 @media (max-width: 768px){
   .theme-banner-info {
     width: 95%;
