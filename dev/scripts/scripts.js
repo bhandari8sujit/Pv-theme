@@ -98,3 +98,14 @@ $(document).ready(function () {
     Layout.init();
   });
   
+
+
+$("#offcanvas-btn").click(function(){
+  $("#theme-offcanvas").css({"width":"250px", "transition":"all .7s ease-in-out"});
+  $(".theme-main").css("margin-right","250px");
+});
+
+$("#theme-offcanvas a").click(function(){
+  $("#theme-offcanvas").css({"width":"0px", "transition":"all .7s ease-in-out"});
+  $(".theme-main").css("margin-right","0px");
+});

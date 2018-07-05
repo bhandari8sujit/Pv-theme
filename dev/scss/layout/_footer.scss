@@ -1,11 +1,15 @@
 
 .theme-footer {
     padding: 75px 0;
+
+    @include respond(phone){
+        padding: 40px 0px;
+    }
     &__powered {
         text-align: right;
         @media(max-width: $screen-xs-max) {
             text-align: left;
-            margin-top: 35px;
+            margin-top: 20px;
         } 
     }
 
